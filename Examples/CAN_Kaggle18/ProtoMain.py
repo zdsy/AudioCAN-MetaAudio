@@ -61,6 +61,7 @@ def single_run_main(params, model, device, batch_fns, seed):
         train_coll = None
         val_coll = my_collate
         eval_step = proto_step_var
+        # eval_step = can_step_fixed_val
 
         train_dataset = TrainingVariableDataset
         val_dataset = NormDataset
@@ -93,6 +94,7 @@ def single_run_main(params, model, device, batch_fns, seed):
                         stats_file_path=setup.stats_file_path)
 
     val_batch_size = 1 if params['data']['variable'] else params['training']['train_batch_size']
+    # val_batch_size = params['training']['train_batch_size']
     # Actually creates the dataloaders
     backTaskloader = FastDataLoader(
         background, batch_sampler= train_task_sampler(dataset=background,
@@ -152,7 +154,7 @@ def single_run_main(params, model, device, batch_fns, seed):
                                 trans=params['training']['trans_batch'])
 
     # Runs the actual fitting function, contained in fit.py
-    pre, post, loss, post_std = fit(
+    pre, post, loss, post_std = fit(device=device,
                     learner=model,
                     optimiser=meta_opt,
                     scheduler=scheduler,

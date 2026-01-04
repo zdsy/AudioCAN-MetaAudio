@@ -75,11 +75,13 @@ def file_conversion(new_dir, current_path, sr, norm):
         # z normalises the data
         data = normalise(data)
 
-    file_name = current_path.split('\\')[-1]
+    file_name = current_path.split('/')[-1]
     file_name = file_name.split('.')[0]
 
+    # print(file_name)
+
     new_path = os.path.join(new_dir, file_name)
-    #print(new_path, np.mean(new_data), np.std(new_data))
+    # print(new_path)
 
     # Saves the newly normalised sample to new directory
     np.save(new_path, data)
@@ -100,15 +102,17 @@ def main(old_dir, new_dir, sr, norm):
         sr (int): The sample rate to convert the data samples into
         norm (boolean): Whether to apply per-sample norm to the data 
     """
-    try:
-        os.mkdir(new_dir)
+    # try:
+    #     os.mkdir(new_dir)
 
-    except Exception:
-        print(f'Cannot create folder: {new_dir}')
+    # except Exception:
+    #     print(f'Cannot create folder: {new_dir}')
+    os.makedirs(new_dir, exist_ok=True)
 
     #sets working dir as array parent folder
-    os.chdir(new_dir)
+    # os.chdir(new_dir)
 
+    # print(os.getcwd())
     # Gets the names of the included classes
     contained_classes = os.listdir(old_dir)
 
@@ -125,6 +129,8 @@ def main(old_dir, new_dir, sr, norm):
     for seen_class in contained_classes:
             working_dir = os.path.join(old_dir, seen_class)
             new_working_dir = os.path.join(new_dir, seen_class)
+
+            # print(working_dir, new_working_dir)
 
             try:
                 os.mkdir(new_working_dir)

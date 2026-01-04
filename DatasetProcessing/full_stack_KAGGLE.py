@@ -30,7 +30,7 @@ from folder_sort_KAGGLE18 import main as folder_sort_main
 
 
 # Main KAGGLE folder path
-MAIN_DIR = 'C:/Users/user/Documents/Datasets/FSDKaggle18/'
+MAIN_DIR = '../Datasets/FSDKaggle2018/'
 # Path wated for final spectrogram data
 FINAL_SPEC_PATH = MAIN_DIR + '/' + 'Spec_1_second_npy'
 
@@ -49,9 +49,11 @@ if __name__ == '__main__':
     # Sorts the mixed up audio files into classes
     sorted_path = folder_sort_main(main_dir=MAIN_DIR)
     sorted_path = os.path.join(MAIN_DIR, sorted_path)
+    print(f'Sorted Path: {sorted_path}')
 
     # Generates a new path for the sorted classes in npy format
-    sorted_npy_path = os.path.join(MAIN_DIR, sorted_path + '_npy')
+    sorted_npy_path = os.path.join(MAIN_DIR, 'Sorted_npy')
+    print(f'Sorted NPY Path: {sorted_npy_path}')
     np_norm_main(old_dir=sorted_path, new_dir=sorted_npy_path, sr=MEL_SPEC_PARAMS['sr'], norm=NORM)
 
 

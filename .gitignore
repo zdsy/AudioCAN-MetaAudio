@@ -1,0 +1,18 @@
+# Exclude Datasets and NPY files
+Datasets/
+*.npy
+*.wav
+*.csv
+
+# Exclude Python cache and environments
+__pycache__/
+*.pyc
+.venv/
+anaconda3/
+
+# Exclude Model Weights and Logs
+*.pth
+*.pt
+logs/
+
+*.png

@@ -22,7 +22,7 @@ from utils_proto import *
 # PROTONET FIT FUNCTION 
 ###############################################################################
 
-def fit(learner, optimiser, scheduler, loss_fn, dataloaders, prep_batch_fns,
+def fit(device, learner, optimiser, scheduler, loss_fn, dataloaders, prep_batch_fns,
         fit_functions, params, meta_func_kwargs):
     """The main fit function for the meta-learner
 
@@ -51,6 +51,7 @@ def fit(learner, optimiser, scheduler, loss_fn, dataloaders, prep_batch_fns,
     # Chooses what type of validation step to take and sets according functions
     if params['data']['variable']:
         validation_step = validation_step_variable
+        # validation_step = validation_step_fixed
     else:
         validation_step = validation_step_fixed
 
@@ -88,14 +89,18 @@ def fit(learner, optimiser, scheduler, loss_fn, dataloaders, prep_batch_fns,
         for batch_index, batch in enumerate(trainLoader):
             episode += 1
 
-            # Prep batch and move to GPU
-            x, y = train_batch(batch, params['training']['train_batch_size'])
+            # print(batch)
 
-            train_loss, train_pre, train_post, train_post_std = train_fit_function(model=learner,
+            # Prep batch and move to GPU
+            x, y, pid = train_batch(batch, params['training']['train_batch_size'])
+            # print(y, pid)
+
+            train_loss, train_pre, train_post, train_post_std = train_fit_function(device=device, model=learner,
                                                         optimiser=optimiser,
                                                         loss_fn=loss_fn,
                                                         x=x,
                                                         y=y,
+                                                        pid=pid,
                                                         train=True,
                                                         **meta_func_kwargs)
 
@@ -112,7 +117,7 @@ def fit(learner, optimiser, scheduler, loss_fn, dataloaders, prep_batch_fns,
 
                 # Metric collecting
                 val_data = {'Pre_acc': val_pre, 'Post_acc':val_post,
-                                                    'Back_loss':val_loss}
+                                                    'Back_loss':val_loss, 'Post_std':val_post_std}
                 val_df = update_csv(val_path, val_df, val_data)
                 logger.info(f"Episode {episode}:: Validation:  { {key : round(val_data[key], 2) for key in val_data} }")
 
@@ -209,7 +214,7 @@ def validation_step_fixed(valLoader, model, optimiser, prep_batch, fit_function,
         # Prep batch and move to GPU
         x, y = prep_batch(batch, params['training']['train_batch_size'])
 
-        back_loss, avg_pre, avg_post, post_vals = fit_function(model=model,
+        back_loss, avg_pre, avg_post, post_vals = fit_function(device=device, model=model,
                                                     optimiser=optimiser,
                                                     loss_fn=loss_fn,
                                                     x=x,
@@ -263,6 +268,8 @@ def validation_step_variable(valLoader, model, optimiser, prep_batch, fit_functi
         # Prep batch and move to GPU
         x_s, x_q, q_nums, y = prep_batch(batch, 1)
 
+        # print(x_s.shape, x_q.shape, q_nums, y)
+
         # Grabs torch device to deal with compile function data movement
         device = torch.device('cuda:' + str(params['base']['cuda']) if \
             torch.cuda.is_available() else 'cpu')
@@ -289,4 +296,4 @@ def validation_step_variable(valLoader, model, optimiser, prep_batch, fit_functi
     pre = total_pre/num_batches
     post = total_post/num_batches
 
-    return loss, pre, np.mean(all_vals), np.std(all_vals)
+    return loss, pre, np.mean(all_vals), mean_confidence_interval(all_vals)

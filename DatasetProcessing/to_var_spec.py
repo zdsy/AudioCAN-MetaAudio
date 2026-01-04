@@ -89,7 +89,7 @@ def stacked_spec(og_file_path, new_dir, length, spec_params):
     expected_size = spec_params['sr'] * length
 
     # Generates the new filename path
-    file_name = og_file_path.split('\\')[-1]
+    file_name = og_file_path.split('/')[-1]
     file_name = file_name.split('.')[0]
     new_path = os.path.join(new_dir, file_name)
 
@@ -165,7 +165,7 @@ def main(old_dir, new_dir, sample_length, spec_params):
         print(f'Cannot create folder: {new_dir}')
 
     #sets working dir as array parent folder
-    os.chdir(new_dir)
+    # os.chdir(new_dir)
 
     # Gets the names of the included classes
     contained_classes = os.listdir(old_dir)
@@ -184,10 +184,11 @@ def main(old_dir, new_dir, sample_length, spec_params):
             working_dir = os.path.join(old_dir, seen_class)
             new_working_dir = os.path.join(new_dir, seen_class)
 
-            try:
-                os.mkdir(new_working_dir)
-            except Exception:
-                pass
+            # try:
+            #     os.mkdir(new_working_dir)
+            # except Exception:
+            #     pass
+            os.makedirs(new_working_dir, exist_ok=True)
 
             print(seen_class)
 

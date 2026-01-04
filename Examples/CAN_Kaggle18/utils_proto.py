@@ -20,6 +20,7 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
+import scipy
 
 from datetime import datetime
 
@@ -205,3 +206,10 @@ def save_model(extra_path_data, model):
 def load_model(model_path, base_model):
     base_model.load_state_dict(torch.load(model_path))
     return base_model
+
+def mean_confidence_interval(data, confidence=0.95):
+    a = 1.0 * np.array(data)
+    n = len(a)
+    m, se = np.mean(a), scipy.stats.sem(a)
+    h = se * scipy.stats.t.ppf((1 + confidence) / 2., n - 1)
+    return h

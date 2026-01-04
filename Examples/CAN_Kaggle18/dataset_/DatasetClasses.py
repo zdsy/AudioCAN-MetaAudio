@@ -252,6 +252,7 @@ class TrainingVariableDataset(Dataset):
             sample = self.norm_func(sample)
 
         label = self.id_to_class_id[item]
+        # print(label)
         return sample, label
 
     def __len__(self):
