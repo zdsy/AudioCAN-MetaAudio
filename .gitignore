@@ -3,6 +3,8 @@ Datasets/
 *.npy
 *.wav
 *.csv
+*.doc
+*.meta
 
 # Exclude Python cache and environments
 __pycache__/

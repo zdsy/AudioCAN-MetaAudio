@@ -64,8 +64,8 @@ def proto_step_fixed(model, optimiser, loss_fn, x, y, k_shot, n_way, q_queries,
         # k lots of q query samples from those classes
         support = embeddings[:k_shot*n_way]
 
-        x_queries = embeddings[q_queries*n_way:]
-        y_queries = y_batch[q_queries*n_way:]
+        x_queries = embeddings[k_shot*n_way:]
+        y_queries = y_batch[k_shot*n_way:]
 
         prototypes = compute_prototypes(support, n_way, k_shot)
 
@@ -122,7 +122,8 @@ def proto_step_var(model, optimiser, loss_fn, x_support, x_query, q_num, y,
     for idx in range(x_support.shape[0]):
 
         x_task_train = x_support[idx]
-
+    
+        # TODO
         sub_q_num = q_num[idx*(n_way*q_queries): (idx+1)*(n_way*q_queries)]
         q_num_sub_sum = sum(sub_q_num)
         x_task_val = x_query[last_query_idx: (last_query_idx + q_num_sub_sum)]
@@ -131,7 +132,7 @@ def proto_step_var(model, optimiser, loss_fn, x_support, x_query, q_num, y,
 
         # y value access is same as a fixed length batching
         y_task_train = y[idx][:(n_way * k_shot)]
-        y_task_val = y[idx][(n_way * q_queries):]
+        y_task_val = y[idx][(n_way * k_shot):]
 
         # Embed all samples
         support_emb = model(x_task_train)
