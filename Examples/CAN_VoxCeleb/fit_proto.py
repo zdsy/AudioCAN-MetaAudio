@@ -102,6 +102,7 @@ def fit(device, learner, optimiser, scheduler, loss_fn, dataloaders, prep_batch_
                                                         y=y,
                                                         pid=pid,
                                                         train=True,
+                                                        k=params['training']['mask_k'],
                                                         **meta_func_kwargs)
 
             # Runs a validation at the first episode and every 'spacing' after

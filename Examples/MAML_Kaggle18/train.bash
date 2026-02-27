@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH --output=MC_51_resnet.out
+#SBATCH --output=MC_51_renset.out
 #SBATCH --error=MC_51_resnet.err
 #SBATCH --time=24:00:00
 #SBATCH --nodes=1

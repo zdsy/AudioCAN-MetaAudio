@@ -5,6 +5,7 @@ import librosa
 import numpy as np
 import random
 import scipy
+import sys
 
 def adjust_learning_rate(optimizer, iters, LUT):
     # decay learning rate by 'gamma' for every 'stepsize'
@@ -139,7 +140,49 @@ def feature_mask(time_mask: torch.Tensor, total_stride: int = 16) -> torch.Tenso
     
     return feature_mask
 
-def mask_for_query(support):
+
+import os
+import glob
+import numpy as np
+import torch
+
+class OODSampler:
+    def __init__(self, base_path):
+        # Recursively find all .npy files in the VoxCeleb features dir
+        self.file_list = glob.glob(os.path.join(base_path, '**/*.npy'), recursive=True)
+        if len(self.file_list) == 0:
+            raise FileNotFoundError(f"No .npy files found in {base_path}")
+        # print(f"OOD Sampler initialized with {len(self.file_list)} VoxCeleb files.")
+
+    def get_random_batch(self, shape):
+        """
+        Returns a tensor of shape [Nway, Nshot, 1, 128, T]
+        matching the target support shape.
+        """
+        Nway, Nshot, C, F, T = shape
+        batch_noise = []
+        
+        for _ in range(Nway * Nshot):
+            path = np.random.choice(self.file_list)
+            data = np.load(path) # shape (2, 128, T_original)
+            
+            # Use channel 0, handle temporal alignment
+            noise_seg = torch.from_numpy(data[0:1, :, :]).float()
+            
+            # Ensure T matches target (pad or crop)
+            if noise_seg.shape[-1] < T:
+                noise_seg = torch.nn.functional.pad(noise_seg, (0, T - noise_seg.shape[-1]))
+            else:
+                noise_seg = noise_seg[:, :, :T]
+                
+            batch_noise.append(noise_seg.unsqueeze(0))
+            
+        # Reshape to [Nway, Nshot, 1, 128, T]
+        return torch.stack(batch_noise).view(Nway, Nshot, C, F, T)
+    
+
+
+def mask_for_query(support, k=0.4):
     """
     support: [Nway=5, Nshot=5, 1, 128, T]
     
@@ -157,12 +200,14 @@ def mask_for_query(support):
         x = support[c, idx]    # [1, 128, T]
         # x = support[c, 0]    # [1, 128, T]
 
+        x_linear = torch.pow(10.0, x / 10.0)
         # compute time-wise energy
-        energy = x.pow(2).mean(dim=1).squeeze(0)  # [T]
+        # energy = x.pow(2).mean(dim=1).squeeze(0)  # [T]
+        energy = x_linear.mean(dim=1).squeeze(0)
 
-        # select top-50% energy frames
+        # select top-(1-k)% energy frames
         sorted_idx = torch.argsort(energy, descending=True)
-        keep_len = int(0.6 * T)
+        keep_len = int((1-k) * T)
         keep_idx = sorted_idx[:keep_len]
 
         # binary mask over time frames
@@ -171,13 +216,14 @@ def mask_for_query(support):
 
         # apply mask: keep top-energy frames
         x_masked = x.clone()
-        
-        # x_masked[:, :, ~mask] = 0   # zero out low-energy frames
-
-        noise_scale = 0.3 * x.std().clamp(min=1e-8) 
-        # noise_mean  = 0.3 * x.mean().clamp(min=0.0)
-        noise = torch.abs(torch.randn_like(x)) * noise_scale
+        noise_scale = 0.3 * x.std() 
+        noise_mean  = x.mean()
+        noise = torch.randn_like(x) * noise_scale + noise_mean
         x_masked[:, :, ~mask] = noise[:, :, ~mask]
+
+        # x_masked = x_linear.clone()
+        # x_masked[:, :, ~mask] = 0
+        # x_masked = 10.0 * torch.log10(x_masked + sys.float_info.epsilon)
 
         # reshape to [1,128,T] → [1,1,128,T] for query
         x_masked = x_masked.unsqueeze(0)  # [1,1,128,T]
@@ -317,3 +363,5 @@ def attention_constraint(
     loss = penalized_error.sum()
     
     return loss
+
+

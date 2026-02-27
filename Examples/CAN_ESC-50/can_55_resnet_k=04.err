@@ -1,0 +1,6 @@
++ conda init
++ conda activate pesto-full-py310
+
+CondaError: Run 'conda init' before 'conda activate'
+
++ srun python -u BaseLooperProto.py

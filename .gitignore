@@ -18,3 +18,5 @@ anaconda3/
 logs/
 
 *.png
+*.txt
+*.ipynb

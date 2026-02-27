@@ -4,7 +4,8 @@ import torch.nn as nn
 import torch.nn.functional as F
 from model.Resnet12 import resnet12
 from model.cam import CAM
-from model.Conv_and_Hybrid import StandardHybrid, StandardCNN
+# from model.cam_2d import CAM
+from models.Conv_and_Hybrid import StandardHybrid, StandardCNN
 
 
 def one_hot(labels_train):
@@ -23,12 +24,12 @@ class Model(nn.Module):
         self.iter_num_prob = iter_num_prob
 
         self.base = resnet12()
+        self.nFeat = self.base.nFeat
         # self.base = StandardCNN(1, [10, 1, 128, 157], 64, 2, 5)
+        # self.nFeat = 64
 
         self.cam = CAM()
-
-        self.nFeat = self.base.nFeat
-        # self.nFeat = 64
+        
         self.classifier = nn.Conv2d(self.nFeat, num_classes, kernel_size=1)
 
     def test(self, ftrain, ftest, a1, a2):

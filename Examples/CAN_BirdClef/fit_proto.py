@@ -16,6 +16,8 @@ import pandas as pd
 from tqdm import trange
 from datetime import datetime
 
+from model.utils import OODSampler
+
 from utils_proto import *
 
 ###############################################################################
@@ -102,6 +104,7 @@ def fit(device, learner, optimiser, scheduler, loss_fn, dataloaders, prep_batch_
                                                         y=y,
                                                         pid=pid,
                                                         train=True,
+                                                        k=params['training']['mask_k'],
                                                         **meta_func_kwargs)
 
             # Runs a validation at the first episode and every 'spacing' after
@@ -167,6 +170,7 @@ def fit(device, learner, optimiser, scheduler, loss_fn, dataloaders, prep_batch_
     final_figures(extra_path_data, params, train_df, val_df)
 
     # Loads the best validation modle to use on the test set
+    # best_model_path = '/home/ids/xzhuang/MetaAudio-A-Few-Shot-Audio-Classification-Benchmark/Examples/CAN_BirdClef/results/CAN_BirdCLef_5-1_k=01resnet_global_1_runs/CAN_BirdCLef_5-1_k=0.1resnet_global_1_runs_20000_seed_935/best_val_model__24_01__13_45.pt'
     learner = load_model(best_model_path, learner)
     # Can reuse the validation loop to carry out final testing
     final_loss, final_pre, final_post, final_post_std = validation_step(evalLoader, learner,
@@ -233,7 +237,7 @@ def validation_step_fixed(valLoader, model, optimiser, prep_batch, fit_function,
     pre = total_pre/num_batches
     post = total_post/num_batches
 
-    return loss, pre, np.mean(all_vals), np.std(all_vals)
+    return loss, pre, np.mean(all_vals), mean_confidence_interval(all_vals)
 
 
 ###############################################################################

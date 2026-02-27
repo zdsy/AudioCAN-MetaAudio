@@ -139,7 +139,7 @@ def feature_mask(time_mask: torch.Tensor, total_stride: int = 16) -> torch.Tenso
     
     return feature_mask
 
-def mask_for_query(support):
+def mask_for_query(support, k=0.2):
     """
     support: [Nway=5, Nshot=5, 1, 128, T]
     
@@ -157,12 +157,13 @@ def mask_for_query(support):
         x = support[c, idx]    # [1, 128, T]
         # x = support[c, 0]    # [1, 128, T]
 
+        x_linear = torch.pow(10.0, x / 10.0)
         # compute time-wise energy
-        energy = x.pow(2).mean(dim=1).squeeze(0)  # [T]
+        energy = x_linear.mean(dim=1).squeeze(0)
 
         # select top-50% energy frames
         sorted_idx = torch.argsort(energy, descending=True)
-        keep_len = int(0.6 * T)
+        keep_len = int((1-k) * T)
         keep_idx = sorted_idx[:keep_len]
 
         # binary mask over time frames
@@ -171,13 +172,12 @@ def mask_for_query(support):
 
         # apply mask: keep top-energy frames
         x_masked = x.clone()
-        
-        # x_masked[:, :, ~mask] = 0   # zero out low-energy frames
 
-        noise_scale = 0.3 * x.std().clamp(min=1e-8) 
-        # noise_mean  = 0.3 * x.mean().clamp(min=0.0)
-        noise = torch.abs(torch.randn_like(x)) * noise_scale
-        x_masked[:, :, ~mask] = noise[:, :, ~mask]
+        noise_scale = 0.3 * x.std()
+        noise_mean  = x.mean()
+        # noise_mean  = torch.tensor(-80.0)
+        noise = torch.randn_like(x) * noise_scale + noise_mean
+        x_masked[:, :, ~mask] = noise[:, :, ~mask] 
 
         # reshape to [1,128,T] → [1,1,128,T] for query
         x_masked = x_masked.unsqueeze(0)  # [1,1,128,T]
@@ -317,3 +317,56 @@ def attention_constraint(
     loss = penalized_error.sum()
     
     return loss
+
+
+def mask_for_query_s(support, k=0.2):
+    """
+    support: [Nway=5, Nshot=5, 1, 128, T]
+    
+    Returns:
+        ssl_queries: [1, 5, 1, 128, T]
+    """
+
+    Nway, Nshot, C, F, T = support.shape
+    queries = []
+    s_linear = torch.pow(10.0, support / 10.0)
+    s = torch.log(1 + 10000 * s_linear)
+
+    for c in range(Nway):
+
+        # pick one support sample randomly from this class
+        idx = torch.randint(0, Nshot, (1,)).item()
+        x_linear = s_linear[c, idx]    # [1, 128, T]
+        x = s[c, idx]
+        # x = support[c, 0]    # [1, 128, T]
+
+        energy = x_linear.mean(dim=1).squeeze(0)
+
+        # select top-50% energy frames
+        sorted_idx = torch.argsort(energy, descending=True)
+        keep_len = int((1-k) * T)
+        keep_idx = sorted_idx[:keep_len]
+
+        # binary mask over time frames
+        mask = torch.zeros(T, dtype=torch.bool, device=x.device)
+        mask[keep_idx] = True
+
+        # apply mask: keep top-energy frames
+        x_masked = x.clone()
+
+        noise_scale = 0.3 * x.std()
+        # noise_mean  = x_linear.mean()
+        noise = torch.abs(torch.randn_like(x)) * noise_scale
+        x_masked[:, :, ~mask] = noise[:, :, ~mask] 
+
+        # reshape to [1,128,T] → [1,1,128,T] for query
+        x_masked = x_masked.unsqueeze(0)  # [1,1,128,T]
+        queries.append(x_masked)
+
+    # stack: becomes [5,1,1,128,T]
+    queries = torch.cat(queries, dim=0)
+
+    # add batch dim → [1,5,1,128,T]
+    queries = queries.unsqueeze(0)
+
+    return queries, s

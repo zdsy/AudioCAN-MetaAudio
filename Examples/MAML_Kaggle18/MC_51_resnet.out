@@ -1,150 +1,0 @@
-no change     /home/ids/xzhuang/anaconda3/condabin/conda
-no change     /home/ids/xzhuang/anaconda3/bin/conda
-no change     /home/ids/xzhuang/anaconda3/bin/conda-env
-no change     /home/ids/xzhuang/anaconda3/bin/activate
-no change     /home/ids/xzhuang/anaconda3/bin/deactivate
-no change     /home/ids/xzhuang/anaconda3/etc/profile.d/conda.sh
-no change     /home/ids/xzhuang/anaconda3/etc/fish/conf.d/conda.fish
-no change     /home/ids/xzhuang/anaconda3/shell/condabin/Conda.psm1
-no change     /home/ids/xzhuang/anaconda3/shell/condabin/conda-hook.ps1
-no change     /home/ids/xzhuang/anaconda3/lib/python3.11/site-packages/xontrib/conda.xsh
-no change     /home/ids/xzhuang/anaconda3/etc/profile.d/conda.csh
-no change     /home/ids/xzhuang/.bashrc
-No action taken.
-no change     /home/ids/xzhuang/anaconda3/condabin/conda
-no change     /home/ids/xzhuang/anaconda3/bin/conda
-no change     /home/ids/xzhuang/anaconda3/bin/conda-env
-no change     /home/ids/xzhuang/anaconda3/bin/activate
-no change     /home/ids/xzhuang/anaconda3/bin/deactivate
-no change     /home/ids/xzhuang/anaconda3/etc/profile.d/conda.sh
-no change     /home/ids/xzhuang/anaconda3/etc/fish/conf.d/conda.fish
-no change     /home/ids/xzhuang/anaconda3/shell/condabin/Conda.psm1
-no change     /home/ids/xzhuang/anaconda3/shell/condabin/conda-hook.ps1
-no change     /home/ids/xzhuang/anaconda3/lib/python3.11/site-packages/xontrib/conda.xsh
-no change     /home/ids/xzhuang/anaconda3/etc/profile.d/conda.csh
-no change     /home/ids/xzhuang/.bashrc
-No action taken.
-
-
-
-
-
-
-cuda:0
-Using: resnet
-resnet:   0%|          | 0/1 [00:00<?, ?it/s]Stats file found: global_Kaggle18_5s_variable_spec_fixed__0.7_0.1_0.2.npy
-[[[-17.53086 ]]
-
- [[ 24.418549]]]
-
-Main Loop:   0%|          | 0/200 [00:00<?, ?it/s][A
-Main Loop:   0%|          | 0/200 [00:00<?, ?it/s, Pre_train=0, Post_train=0, Pre_val=0, Post_val=0][A
-Main Loop:   0%|          | 0/200 [00:21<?, ?it/s, Pre_train=0.01, Post_train=0.26, Pre_val=0.02, Post_val=0.32][A
-Main Loop:   0%|          | 0/200 [00:26<?, ?it/s, Pre_train=0.02, Post_train=0.28, Pre_val=0.02, Post_val=0.32][A
-Main Loop:   0%|          | 0/200 [00:31<?, ?it/s, Pre_train=0, Post_train=0.31, Pre_val=0.02, Post_val=0.32]   [A
-Main Loop:   0%|          | 0/200 [00:35<?, ?it/s, Pre_train=0.01, Post_train=0.3, Pre_val=0.02, Post_val=0.32][A
-Main Loop:   0%|          | 0/200 [00:40<?, ?it/s, Pre_train=0, Post_train=0.35, Pre_val=0.02, Post_val=0.32]  [A
-Main Loop:   0%|          | 0/200 [00:45<?, ?it/s, Pre_train=0.01, Post_train=0.34, Pre_val=0.02, Post_val=0.32][A
-Main Loop:   0%|          | 0/200 [00:50<?, ?it/s, Pre_train=0, Post_train=0.36, Pre_val=0.02, Post_val=0.32]   [A
-Main Loop:   0%|          | 0/200 [00:54<?, ?it/s, Pre_train=0.01, Post_train=0.3, Pre_val=0.02, Post_val=0.32][A
-Main Loop:   0%|          | 0/200 [00:59<?, ?it/s, Pre_train=0.01, Post_train=0.29, Pre_val=0.02, Post_val=0.32][A
-Main Loop:   0%|          | 0/200 [01:19<?, ?it/s, Pre_train=0, Post_train=0.31, Pre_val=0.02, Post_val=0.34]   [A
-Main Loop:   0%|          | 1/200 [01:19<4:24:41, 79.81s/it, Pre_train=0, Post_train=0.31, Pre_val=0.02, Post_val=0.34][A
-Main Loop:   0%|          | 1/200 [01:24<4:24:41, 79.81s/it, Pre_train=0.02, Post_train=0.37, Pre_val=0.02, Post_val=0.34][A
-Main Loop:   0%|          | 1/200 [01:29<4:24:41, 79.81s/it, Pre_train=0.02, Post_train=0.29, Pre_val=0.02, Post_val=0.34][A
-Main Loop:   0%|          | 1/200 [01:34<4:24:41, 79.81s/it, Pre_train=0.01, Post_train=0.35, Pre_val=0.02, Post_val=0.34][A
-Main Loop:   0%|          | 1/200 [01:38<4:24:41, 79.81s/it, Pre_train=0.02, Post_train=0.36, Pre_val=0.02, Post_val=0.34][A
-Main Loop:   0%|          | 1/200 [01:43<4:24:41, 79.81s/it, Pre_train=0.01, Post_train=0.3, Pre_val=0.02, Post_val=0.34] [A
-Main Loop:   0%|          | 1/200 [01:48<4:24:41, 79.81s/it, Pre_train=0.02, Post_train=0.38, Pre_val=0.02, Post_val=0.34][A
-Main Loop:   0%|          | 1/200 [01:53<4:24:41, 79.81s/it, Pre_train=0.02, Post_train=0.34, Pre_val=0.02, Post_val=0.34][A
-Main Loop:   0%|          | 1/200 [01:57<4:24:41, 79.81s/it, Pre_train=0.01, Post_train=0.36, Pre_val=0.02, Post_val=0.34][A
-Main Loop:   0%|          | 1/200 [02:02<4:24:41, 79.81s/it, Pre_train=0.02, Post_train=0.33, Pre_val=0.02, Post_val=0.34][A
-Main Loop:   0%|          | 1/200 [02:22<4:24:41, 79.81s/it, Pre_train=0.04, Post_train=0.3, Pre_val=0.04, Post_val=0.35] [A
-Main Loop:   1%|          | 2/200 [02:22<3:50:40, 69.90s/it, Pre_train=0.04, Post_train=0.3, Pre_val=0.04, Post_val=0.35][A
-Main Loop:   1%|          | 2/200 [02:27<3:50:40, 69.90s/it, Pre_train=0.02, Post_train=0.32, Pre_val=0.04, Post_val=0.35][A
-Main Loop:   1%|          | 2/200 [02:32<3:50:40, 69.90s/it, Pre_train=0.03, Post_train=0.36, Pre_val=0.04, Post_val=0.35][A
-Main Loop:   1%|          | 2/200 [02:36<3:50:40, 69.90s/it, Pre_train=0.02, Post_train=0.38, Pre_val=0.04, Post_val=0.35][A
-Main Loop:   1%|          | 2/200 [02:41<3:50:40, 69.90s/it, Pre_train=0.01, Post_train=0.34, Pre_val=0.04, Post_val=0.35][A
-Main Loop:   1%|          | 2/200 [02:46<3:50:40, 69.90s/it, Pre_train=0.02, Post_train=0.37, Pre_val=0.04, Post_val=0.35][A
-Main Loop:   1%|          | 2/200 [02:51<3:50:40, 69.90s/it, Pre_train=0.04, Post_train=0.38, Pre_val=0.04, Post_val=0.35][A
-Main Loop:   1%|          | 2/200 [02:55<3:50:40, 69.90s/it, Pre_train=0.04, Post_train=0.31, Pre_val=0.04, Post_val=0.35][A
-Main Loop:   1%|          | 2/200 [03:00<3:50:40, 69.90s/it, Pre_train=0.02, Post_train=0.33, Pre_val=0.04, Post_val=0.35][A
-Main Loop:   1%|          | 2/200 [03:05<3:50:40, 69.90s/it, Pre_train=0.06, Post_train=0.3, Pre_val=0.04, Post_val=0.35] [A
-Main Loop:   1%|          | 2/200 [03:25<3:50:40, 69.90s/it, Pre_train=0.04, Post_train=0.46, Pre_val=0.06, Post_val=0.4][A
-Main Loop:   2%|▏         | 3/200 [03:25<3:38:33, 66.56s/it, Pre_train=0.04, Post_train=0.46, Pre_val=0.06, Post_val=0.4][A
-Main Loop:   2%|▏         | 3/200 [03:30<3:38:33, 66.56s/it, Pre_train=0.04, Post_train=0.38, Pre_val=0.06, Post_val=0.4][A
-Main Loop:   2%|▏         | 3/200 [03:35<3:38:33, 66.56s/it, Pre_train=0.04, Post_train=0.4, Pre_val=0.06, Post_val=0.4] [A
-Main Loop:   2%|▏         | 3/200 [03:39<3:38:33, 66.56s/it, Pre_train=0.03, Post_train=0.38, Pre_val=0.06, Post_val=0.4][A
-Main Loop:   2%|▏         | 3/200 [03:45<3:38:33, 66.56s/it, Pre_train=0.03, Post_train=0.39, Pre_val=0.06, Post_val=0.4][A
-Main Loop:   2%|▏         | 3/200 [03:50<3:38:33, 66.56s/it, Pre_train=0.04, Post_train=0.42, Pre_val=0.06, Post_val=0.4][A
-Main Loop:   2%|▏         | 3/200 [03:55<3:38:33, 66.56s/it, Pre_train=0.07, Post_train=0.37, Pre_val=0.06, Post_val=0.4][A
-Main Loop:   2%|▏         | 3/200 [04:00<3:38:33, 66.56s/it, Pre_train=0.03, Post_train=0.38, Pre_val=0.06, Post_val=0.4][A
-Main Loop:   2%|▏         | 3/200 [04:06<3:38:33, 66.56s/it, Pre_train=0.04, Post_train=0.38, Pre_val=0.06, Post_val=0.4][A
-Main Loop:   2%|▏         | 3/200 [04:11<3:38:33, 66.56s/it, Pre_train=0.06, Post_train=0.35, Pre_val=0.06, Post_val=0.4][A
-Main Loop:   2%|▏         | 3/200 [04:32<3:38:33, 66.56s/it, Pre_train=0.08, Post_train=0.39, Pre_val=0.06, Post_val=0.37][A
-Main Loop:   2%|▏         | 4/200 [04:32<3:37:53, 66.70s/it, Pre_train=0.08, Post_train=0.39, Pre_val=0.06, Post_val=0.37][A
-Main Loop:   2%|▏         | 4/200 [04:37<3:37:53, 66.70s/it, Pre_train=0.05, Post_train=0.38, Pre_val=0.06, Post_val=0.37][A
-Main Loop:   2%|▏         | 4/200 [04:42<3:37:53, 66.70s/it, Pre_train=0.07, Post_train=0.32, Pre_val=0.06, Post_val=0.37][A
-Main Loop:   2%|▏         | 4/200 [04:47<3:37:53, 66.70s/it, Pre_train=0.07, Post_train=0.34, Pre_val=0.06, Post_val=0.37][A
-Main Loop:   2%|▏         | 4/200 [04:52<3:37:53, 66.70s/it, Pre_train=0.05, Post_train=0.38, Pre_val=0.06, Post_val=0.37][A
-Main Loop:   2%|▏         | 4/200 [04:56<3:37:53, 66.70s/it, Pre_train=0.05, Post_train=0.38, Pre_val=0.06, Post_val=0.37][A
-Main Loop:   2%|▏         | 4/200 [05:01<3:37:53, 66.70s/it, Pre_train=0.07, Post_train=0.38, Pre_val=0.06, Post_val=0.37][A
-Main Loop:   2%|▏         | 4/200 [05:06<3:37:53, 66.70s/it, Pre_train=0.1, Post_train=0.4, Pre_val=0.06, Post_val=0.37]  [A
-Main Loop:   2%|▏         | 4/200 [05:11<3:37:53, 66.70s/it, Pre_train=0.08, Post_train=0.4, Pre_val=0.06, Post_val=0.37][A
-Main Loop:   2%|▏         | 4/200 [05:16<3:37:53, 66.70s/it, Pre_train=0.05, Post_train=0.37, Pre_val=0.06, Post_val=0.37][A
-Main Loop:   2%|▏         | 4/200 [05:40<3:37:53, 66.70s/it, Pre_train=0.08, Post_train=0.4, Pre_val=0.12, Post_val=0.37] [A
-Main Loop:   2%|▎         | 5/200 [05:40<3:38:00, 67.08s/it, Pre_train=0.08, Post_train=0.4, Pre_val=0.12, Post_val=0.37][A
-Main Loop:   2%|▎         | 5/200 [05:45<3:38:00, 67.08s/it, Pre_train=0.08, Post_train=0.4, Pre_val=0.12, Post_val=0.37][A
-Main Loop:   2%|▎         | 5/200 [05:50<3:38:00, 67.08s/it, Pre_train=0.06, Post_train=0.39, Pre_val=0.12, Post_val=0.37][A
-Main Loop:   2%|▎         | 5/200 [05:54<3:38:00, 67.08s/it, Pre_train=0.1, Post_train=0.4, Pre_val=0.12, Post_val=0.37]  [A
-Main Loop:   2%|▎         | 5/200 [05:59<3:38:00, 67.08s/it, Pre_train=0.1, Post_train=0.41, Pre_val=0.12, Post_val=0.37][A
-Main Loop:   2%|▎         | 5/200 [06:04<3:38:00, 67.08s/it, Pre_train=0.11, Post_train=0.36, Pre_val=0.12, Post_val=0.37][A
-Main Loop:   2%|▎         | 5/200 [06:09<3:38:00, 67.08s/it, Pre_train=0.08, Post_train=0.41, Pre_val=0.12, Post_val=0.37][A
-Main Loop:   2%|▎         | 5/200 [06:14<3:38:00, 67.08s/it, Pre_train=0.06, Post_train=0.43, Pre_val=0.12, Post_val=0.37][A
-Main Loop:   2%|▎         | 5/200 [06:19<3:38:00, 67.08s/it, Pre_train=0.06, Post_train=0.41, Pre_val=0.12, Post_val=0.37][A
-Main Loop:   2%|▎         | 5/200 [06:24<3:38:00, 67.08s/it, Pre_train=0.12, Post_train=0.4, Pre_val=0.12, Post_val=0.37] [A
-Main Loop:   2%|▎         | 5/200 [06:45<3:38:00, 67.08s/it, Pre_train=0.1, Post_train=0.36, Pre_val=0.13, Post_val=0.41][A
-Main Loop:   3%|▎         | 6/200 [06:45<3:34:46, 66.42s/it, Pre_train=0.1, Post_train=0.36, Pre_val=0.13, Post_val=0.41][A
-Main Loop:   3%|▎         | 6/200 [06:50<3:34:46, 66.42s/it, Pre_train=0.1, Post_train=0.42, Pre_val=0.13, Post_val=0.41][A
-Main Loop:   3%|▎         | 6/200 [06:55<3:34:46, 66.42s/it, Pre_train=0.1, Post_train=0.43, Pre_val=0.13, Post_val=0.41][A
-Main Loop:   3%|▎         | 6/200 [07:00<3:34:46, 66.42s/it, Pre_train=0.09, Post_train=0.37, Pre_val=0.13, Post_val=0.41][A
-Main Loop:   3%|▎         | 6/200 [07:05<3:34:46, 66.42s/it, Pre_train=0.11, Post_train=0.43, Pre_val=0.13, Post_val=0.41][A
-Main Loop:   3%|▎         | 6/200 [07:10<3:34:46, 66.42s/it, Pre_train=0.13, Post_train=0.4, Pre_val=0.13, Post_val=0.41] [A
-Main Loop:   3%|▎         | 6/200 [07:15<3:34:46, 66.42s/it, Pre_train=0.11, Post_train=0.36, Pre_val=0.13, Post_val=0.41][A
-Main Loop:   3%|▎         | 6/200 [07:20<3:34:46, 66.42s/it, Pre_train=0.14, Post_train=0.38, Pre_val=0.13, Post_val=0.41][A
-Main Loop:   3%|▎         | 6/200 [07:26<3:34:46, 66.42s/it, Pre_train=0.15, Post_train=0.51, Pre_val=0.13, Post_val=0.41][A
-Main Loop:   3%|▎         | 6/200 [07:30<3:34:46, 66.42s/it, Pre_train=0.1, Post_train=0.42, Pre_val=0.13, Post_val=0.41] [A
-Main Loop:   3%|▎         | 6/200 [07:51<3:34:46, 66.42s/it, Pre_train=0.09, Post_train=0.42, Pre_val=0.15, Post_val=0.39][A
-Main Loop:   4%|▎         | 7/200 [07:51<3:33:33, 66.39s/it, Pre_train=0.09, Post_train=0.42, Pre_val=0.15, Post_val=0.39][A
-Main Loop:   4%|▎         | 7/200 [07:56<3:33:33, 66.39s/it, Pre_train=0.09, Post_train=0.45, Pre_val=0.15, Post_val=0.39][A
-Main Loop:   4%|▎         | 7/200 [08:01<3:33:33, 66.39s/it, Pre_train=0.12, Post_train=0.46, Pre_val=0.15, Post_val=0.39][A
-Main Loop:   4%|▎         | 7/200 [08:06<3:33:33, 66.39s/it, Pre_train=0.16, Post_train=0.4, Pre_val=0.15, Post_val=0.39] [A
-Main Loop:   4%|▎         | 7/200 [08:11<3:33:33, 66.39s/it, Pre_train=0.16, Post_train=0.4, Pre_val=0.15, Post_val=0.39][A
-Main Loop:   4%|▎         | 7/200 [08:15<3:33:33, 66.39s/it, Pre_train=0.13, Post_train=0.37, Pre_val=0.15, Post_val=0.39][A
-Main Loop:   4%|▎         | 7/200 [08:20<3:33:33, 66.39s/it, Pre_train=0.1, Post_train=0.46, Pre_val=0.15, Post_val=0.39] [A
-Main Loop:   4%|▎         | 7/200 [08:25<3:33:33, 66.39s/it, Pre_train=0.18, Post_train=0.44, Pre_val=0.15, Post_val=0.39][A
-Main Loop:   4%|▎         | 7/200 [08:30<3:33:33, 66.39s/it, Pre_train=0.16, Post_train=0.47, Pre_val=0.15, Post_val=0.39][A
-Main Loop:   4%|▎         | 7/200 [08:35<3:33:33, 66.39s/it, Pre_train=0.15, Post_train=0.42, Pre_val=0.15, Post_val=0.39][A
-Main Loop:   4%|▎         | 7/200 [08:59<3:33:33, 66.39s/it, Pre_train=0.14, Post_train=0.42, Pre_val=0.17, Post_val=0.38][A
-Main Loop:   4%|▍         | 8/200 [08:59<3:33:42, 66.78s/it, Pre_train=0.14, Post_train=0.42, Pre_val=0.17, Post_val=0.38][A
-Main Loop:   4%|▍         | 8/200 [09:04<3:33:42, 66.78s/it, Pre_train=0.16, Post_train=0.46, Pre_val=0.17, Post_val=0.38][A
-Main Loop:   4%|▍         | 8/200 [09:09<3:33:42, 66.78s/it, Pre_train=0.13, Post_train=0.41, Pre_val=0.17, Post_val=0.38][A
-Main Loop:   4%|▍         | 8/200 [09:14<3:33:42, 66.78s/it, Pre_train=0.14, Post_train=0.45, Pre_val=0.17, Post_val=0.38][A
-Main Loop:   4%|▍         | 8/200 [09:19<3:33:42, 66.78s/it, Pre_train=0.15, Post_train=0.41, Pre_val=0.17, Post_val=0.38][A
-Main Loop:   4%|▍         | 8/200 [09:24<3:33:42, 66.78s/it, Pre_train=0.14, Post_train=0.39, Pre_val=0.17, Post_val=0.38][A
-Main Loop:   4%|▍         | 8/200 [09:29<3:33:42, 66.78s/it, Pre_train=0.14, Post_train=0.44, Pre_val=0.17, Post_val=0.38][A
-Main Loop:   4%|▍         | 8/200 [09:34<3:33:42, 66.78s/it, Pre_train=0.15, Post_train=0.39, Pre_val=0.17, Post_val=0.38][A
-Main Loop:   4%|▍         | 8/200 [09:39<3:33:42, 66.78s/it, Pre_train=0.16, Post_train=0.41, Pre_val=0.17, Post_val=0.38][A
-Main Loop:   4%|▍         | 8/200 [09:43<3:33:42, 66.78s/it, Pre_train=0.14, Post_train=0.39, Pre_val=0.17, Post_val=0.38][A
-Main Loop:   4%|▍         | 8/200 [10:04<3:33:42, 66.78s/it, Pre_train=0.16, Post_train=0.38, Pre_val=0.18, Post_val=0.42][A
-Main Loop:   4%|▍         | 9/200 [10:04<3:31:24, 66.41s/it, Pre_train=0.16, Post_train=0.38, Pre_val=0.18, Post_val=0.42][A
-Main Loop:   4%|▍         | 9/200 [10:09<3:31:24, 66.41s/it, Pre_train=0.11, Post_train=0.39, Pre_val=0.18, Post_val=0.42][A
-Main Loop:   4%|▍         | 9/200 [10:14<3:31:24, 66.41s/it, Pre_train=0.12, Post_train=0.4, Pre_val=0.18, Post_val=0.42] [A
-Main Loop:   4%|▍         | 9/200 [10:20<3:31:24, 66.41s/it, Pre_train=0.17, Post_train=0.39, Pre_val=0.18, Post_val=0.42][A
-Main Loop:   4%|▍         | 9/200 [10:25<3:31:24, 66.41s/it, Pre_train=0.2, Post_train=0.42, Pre_val=0.18, Post_val=0.42] [A
-Main Loop:   4%|▍         | 9/200 [10:30<3:31:24, 66.41s/it, Pre_train=0.18, Post_train=0.38, Pre_val=0.18, Post_val=0.42][A
-Main Loop:   4%|▍         | 9/200 [10:35<3:31:24, 66.41s/it, Pre_train=0.19, Post_train=0.38, Pre_val=0.18, Post_val=0.42][A
-Main Loop:   4%|▍         | 9/200 [10:41<3:31:24, 66.41s/it, Pre_train=0.14, Post_train=0.35, Pre_val=0.18, Post_val=0.42][A
-Main Loop:   4%|▍         | 9/200 [10:46<3:31:24, 66.41s/it, Pre_train=0.19, Post_train=0.36, Pre_val=0.18, Post_val=0.42][A
-Main Loop:   4%|▍         | 9/200 [10:51<3:31:24, 66.41s/it, Pre_train=0.16, Post_train=0.42, Pre_val=0.18, Post_val=0.42][A
-Main Loop:   4%|▍         | 9/200 [11:12<3:31:24, 66.41s/it, Pre_train=0.16, Post_train=0.38, Pre_val=0.15, Post_val=0.37][A

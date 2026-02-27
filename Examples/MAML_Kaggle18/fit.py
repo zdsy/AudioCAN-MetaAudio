@@ -232,7 +232,7 @@ def validation_step_fixed(valLoader, model, optimiser, prep_batch, fit_function,
     pre = total_pre/num_batches
     post = total_post/num_batches
 
-    return loss, pre, np.mean(all_vals), np.std(all_vals)
+    return loss, pre, np.mean(all_vals), mean_confidence_interval(all_vals)
 
 ###############################################################################
 # VARIABLE VALIDATION FUCNTION

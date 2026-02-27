@@ -4,6 +4,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 from model.Resnet12 import resnet12
 from model.cam import CAM
+# from model.cam_2d import CAM
 from model.Conv_and_Hybrid import StandardHybrid, StandardCNN
 
 

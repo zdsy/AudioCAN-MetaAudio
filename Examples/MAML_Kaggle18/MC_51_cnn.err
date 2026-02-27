@@ -7,6 +7,3 @@ CondaError: Run 'conda init' before 'conda activate'
 /home/ids/xzhuang/anaconda3/envs/pesto-full-py310/lib/python3.10/site-packages/lightning_fabric/__init__.py:40: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
 /home/ids/xzhuang/MetaAudio-A-Few-Shot-Audio-Classification-Benchmark/Examples/MAML_Kaggle18/utils.py:39: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
   new_df = pd.concat([df, pd.DataFrame([new_data])], ignore_index=True)
-srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 712435.0 ON node57 CANCELLED AT 2026-01-20T01:56:50 ***
-slurmstepd: error: *** JOB 712435 ON node57 CANCELLED AT 2026-01-20T01:56:50 ***

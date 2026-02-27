@@ -56,7 +56,7 @@ def single_run_main(params, model, device, batch_fns, seed):
                         seed=seed,
                         class_splits=class_splits)
 
-# Defines the datasets to be used
+    # Defines the datasets to be used
     if params['data']['variable']:
         train_coll = None
         val_coll = my_collate

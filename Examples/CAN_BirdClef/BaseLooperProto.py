@@ -26,6 +26,7 @@ import yaml
 import torch
 import random
 import numpy as np
+import os
 
 from tqdm import trange
 from tqdm import tqdm
@@ -46,7 +47,7 @@ if __name__ == '__main__':
     # Loads in other expeirment params
     with open("proto_params.yaml") as stream:
         params = yaml.safe_load(stream)
-
+    # params['training']['mask_k'] = float(os.getenv('MASK_K', params['training']['mask_k']))
     # Loads in model params
     with open("models/params/all_model_params.yaml") as stream:
         model_params = yaml.safe_load(stream)
@@ -82,10 +83,10 @@ if __name__ == '__main__':
     for mod in model_list:
         print('\n\n\n\n\n')
         print(device)
-        print(f'Starting Model: {mod}')
+        print(f'Starting Model: {mod}, Using k: {params["training"]["mask_k"]}')
 
         # Generate new task type name and store it 
-        task_type = og_task + mod + '_' + params['data']['norm'] + '_' + str(NUM_REPEATS) + \
+        task_type = og_task + mod + '_' + 'k=0' + str(int(params['training']['mask_k']*10)) + '_' + str(NUM_REPEATS) + \
             '_runs'
         params['base']['task_type'] = task_type
 
@@ -104,7 +105,7 @@ if __name__ == '__main__':
             # model = grab_model(mod, mod_params, out_dim)
             # model = model.to(device, dtype=torch.double)
 
-            model = Model(scale_cls=1, num_classes=29).to(device, dtype=torch.float)
+            model = Model(scale_cls=1, num_classes=501).to(device, dtype=torch.float)
 
             pre, post, loss, post_std = single_run_main(params=params, 
                                                 model=model, 

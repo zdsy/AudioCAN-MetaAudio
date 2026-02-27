@@ -6,7 +6,7 @@ base:
   num_repeats: 1
   task_type: 'MAML_VoxCeleb_'
 
-models: ['resnet']
+models: ['Hybrid']
 
 hyper:
   inner_train_steps: 8

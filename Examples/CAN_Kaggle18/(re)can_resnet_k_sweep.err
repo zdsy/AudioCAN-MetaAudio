@@ -1,0 +1,50 @@
++ conda init
++ conda activate pesto-full-py310
+
+CondaError: Run 'conda init' before 'conda activate'
+
++ K_VALUES=(0.2 0.4 0.6 0.8)
++ for k in "${K_VALUES[@]}"
++ echo ------------------------------------------------
++ echo 'EXECUTING TASK: MASK_K = 0.2'
++ echo ------------------------------------------------
++ export MASK_K=0.2
++ MASK_K=0.2
++ srun python -u BaseLooperProto.py
+/home/ids/xzhuang/MetaAudio-A-Few-Shot-Audio-Classification-Benchmark/Examples/CAN_Kaggle18/utils_proto.py:45: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  new_df = pd.concat([df, pd.DataFrame([new_data])], ignore_index=True)
++ echo 'Task for k=0.2 finished. Cool-down for 30s...'
++ sleep 30
++ for k in "${K_VALUES[@]}"
++ echo ------------------------------------------------
++ echo 'EXECUTING TASK: MASK_K = 0.4'
++ echo ------------------------------------------------
++ export MASK_K=0.4
++ MASK_K=0.4
++ srun python -u BaseLooperProto.py
+/home/ids/xzhuang/MetaAudio-A-Few-Shot-Audio-Classification-Benchmark/Examples/CAN_Kaggle18/utils_proto.py:45: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  new_df = pd.concat([df, pd.DataFrame([new_data])], ignore_index=True)
++ echo 'Task for k=0.4 finished. Cool-down for 30s...'
++ sleep 30
++ for k in "${K_VALUES[@]}"
++ echo ------------------------------------------------
++ echo 'EXECUTING TASK: MASK_K = 0.6'
++ echo ------------------------------------------------
++ export MASK_K=0.6
++ MASK_K=0.6
++ srun python -u BaseLooperProto.py
+/home/ids/xzhuang/MetaAudio-A-Few-Shot-Audio-Classification-Benchmark/Examples/CAN_Kaggle18/utils_proto.py:45: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  new_df = pd.concat([df, pd.DataFrame([new_data])], ignore_index=True)
++ echo 'Task for k=0.6 finished. Cool-down for 30s...'
++ sleep 30
++ for k in "${K_VALUES[@]}"
++ echo ------------------------------------------------
++ echo 'EXECUTING TASK: MASK_K = 0.8'
++ echo ------------------------------------------------
++ export MASK_K=0.8
++ MASK_K=0.8
++ srun python -u BaseLooperProto.py
+/home/ids/xzhuang/MetaAudio-A-Few-Shot-Audio-Classification-Benchmark/Examples/CAN_Kaggle18/utils_proto.py:45: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  new_df = pd.concat([df, pd.DataFrame([new_data])], ignore_index=True)
++ echo 'Task for k=0.8 finished. Cool-down for 30s...'
++ sleep 30

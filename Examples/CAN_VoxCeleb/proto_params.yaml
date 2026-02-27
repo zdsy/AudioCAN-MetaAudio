@@ -5,12 +5,12 @@ base:
   k_shot: 1
   q_queries: 1                                                          
   distance: 'l2'                                                                
-  task_type: 'CAN_VoxCeleb_5-1'  # 'ProtoNet'/'MatchingNet'/'RelationNet'/'CAN_VoxCeleb'/'Hybrid'
+  task_type: '(re)CAN_VoxCeleb_5-1_2Dssl'  # 'ProtoNet'/'MatchingNet'/'RelationNet'/'CAN_VoxCeleb'/'Hybrid'
   cuda: 0
   num_repeats: 1
   out_dim: 64
 
-models: ['resent']
+models: ['resnet']
 
 hyper:
   initial_lr: 0.0005 #0.01 #0.005
@@ -25,7 +25,8 @@ hyper:
 
 
 training:
-  epochs: 1000 #1500
+  mask_k: 0.4
+  epochs: 1500 #1500
   episodes_per_epoch: 10
   train_batch_size: 20 # 10/20/50 
 

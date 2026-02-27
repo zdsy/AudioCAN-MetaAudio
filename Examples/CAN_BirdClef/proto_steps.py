@@ -24,7 +24,7 @@ from model.losses import CrossEntropyLoss
 # FIXED PROTONET EPISODE
 ##############################################################################
 def proto_step_fixed(device, model, optimiser, loss_fn, x, y, pid, k_shot, n_way, q_queries,
-                        distance, train):
+                        distance, train, k):
     """Performs a single training episode for a Prototypical Network.
     # Arguments
         model: Prototypical Network to be trained.
@@ -72,7 +72,7 @@ def proto_step_fixed(device, model, optimiser, loss_fn, x, y, pid, k_shot, n_way
 
         s = meta_batch[:k_shot*n_way].view(-1, k_shot, 1, meta_batch.shape[-2], meta_batch.shape[-1]).float()
         q = meta_batch[k_shot*n_way:].view(-1, 1, meta_batch.shape[-2], meta_batch.shape[-1]).float()
-        q_ssl = mask_for_query(s).to(device)
+        q_ssl = mask_for_query(s, k).to(device)
         s = s.view(1, -1, 1, meta_batch.shape[-2], meta_batch.shape[-1])
         q = q.unsqueeze(0)
         # print(s.shape, q.shape, q_ssl.shape)
@@ -92,9 +92,10 @@ def proto_step_fixed(device, model, optimiser, loss_fn, x, y, pid, k_shot, n_way
         loss2 = criterion(ytest, pid_batch.view(-1))
         loss3 = criterion(cls_scores_ssl, qlabel.view(-1))
         loss4 = criterion(ytest_ssl, pid_batch.view(-1))
-        # loss5 = attention_constraint(a2, f_masks)
         loss = loss1 + loss2 + 0.3*(loss3 + loss4)
         # loss = loss1 + loss2
+        # print(f'Losses: Cls {loss1.item():.4f}, PID {loss2.item():.4f}, Cls_SSL {loss3.item():.4f}, PID_SSL {loss4.item():.4f}')
+        # print(pid_batch.view(-1).cpu().numpy())
 
         model.eval()
         with torch.no_grad():

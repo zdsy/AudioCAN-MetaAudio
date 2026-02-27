@@ -12,7 +12,7 @@ hyper:
   inner_train_steps: 8
   inner_val_steps: 8
 
-  inner_lr: 0.4 # 0.4
+  inner_lr: 0.3 # 0.4
   meta_lr: 0.001
   min_lr: 0.001
   T_max: 1

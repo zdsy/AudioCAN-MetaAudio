@@ -102,8 +102,8 @@ if __name__ == '__main__':
             set_seed(seed)
             params['base']['seed'] = seed
 
-            # model = grab_model(name, model_params[name], out_dim=params['base']['n_way'])
-            model = resnet12()
+            model = grab_model(name, model_params[name], out_dim=params['base']['n_way'])
+            # model = resnet12()
             model = model.to(device, dtype=torch.float)
     
             pre, post, loss, post_std = single_run_main(params=params, 

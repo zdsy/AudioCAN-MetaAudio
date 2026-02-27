@@ -2,15 +2,15 @@
 
 base:                                                              
   n_way: 5                                                     
-  k_shot: 5
+  k_shot: 1
   q_queries: 1                                                          
   distance: 'l2'                                                                
-  task_type: 'PROTO_VAR_Kaggle_5_second_'
+  task_type: '(re)CAN_BirdCLef_5-1_2Dssl'  # 'ProtoNet'/'MatchingNet'/'RelationNet'/'CAN_BirdClef'/'Hybrid'
   cuda: 0
   num_repeats: 1
   out_dim: 64
 
-models: ['Hybrid']
+models: ['resnet']
 
 hyper:
   initial_lr: 0.0005 #0.01 #0.005
@@ -25,7 +25,8 @@ hyper:
 
 
 training:
-  epochs: 500 #1500
+  mask_k: 0.2
+  epochs: 800 #1500
   episodes_per_epoch: 10
   train_batch_size: 20 # 10/20/50 
 
@@ -45,13 +46,15 @@ training:
 
 data:
   variable: True
-  name: 'Kaggle18_5s' # Kaggle_18
+  name: 'BirdClef' 
   norm: 'global'
   type: 'variable_spec' # rawtospec/spec/variable_spec
   fixed: True
 
-  fixed_path: 'dataset_/splits/Kaggle18_norm_split.npy'
-  data_path: '../../Datasets/FSDKaggle2018/Spec_5_second_npy'
+  # fixed_path: 'dataset_/splits/BirdClef_norm_split_PRUNED.npy'
+  # data_path: '../../Datasets/BirdClef/features'
+  fixed_path: '/home/ids/xzhuang/audio-few-shot-learning/data/BirdClef/splits.npy'
+  data_path: '/home/ids/xzhuang/audio-few-shot-learning/data/BirdClef/features'
 
 
 # Split percentages for train/val/test

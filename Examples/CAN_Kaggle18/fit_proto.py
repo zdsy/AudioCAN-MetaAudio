@@ -102,6 +102,7 @@ def fit(device, learner, optimiser, scheduler, loss_fn, dataloaders, prep_batch_
                                                         y=y,
                                                         pid=pid,
                                                         train=True,
+                                                        k=params['training']['mask_k'],
                                                         **meta_func_kwargs)
 
             # Runs a validation at the first episode and every 'spacing' after
@@ -233,7 +234,7 @@ def validation_step_fixed(valLoader, model, optimiser, prep_batch, fit_function,
     pre = total_pre/num_batches
     post = total_post/num_batches
 
-    return loss, pre, np.mean(all_vals), np.std(all_vals)
+    return loss, pre, np.mean(all_vals), mean_confidence_interval(all_vals)
 
 
 ###############################################################################

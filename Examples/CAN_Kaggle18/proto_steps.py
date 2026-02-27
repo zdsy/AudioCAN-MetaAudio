@@ -16,7 +16,7 @@ from torch.nn import Module
 from torch.optim import Optimizer
 
 from metrics import catagorical_accuracy, vote_catagorical_acc, majority_vote
-from model.utils import mask_for_query, one_hot
+from model.utils import mask_for_query, one_hot, mask_for_query_s
 from model.losses import CrossEntropyLoss
 
 
@@ -24,7 +24,7 @@ from model.losses import CrossEntropyLoss
 # FIXED PROTONET EPISODE
 ##############################################################################
 def proto_step_fixed(device, model, optimiser, loss_fn, x, y, pid, k_shot, n_way, q_queries,
-                        distance, train):
+                        distance, train, k):
     """Performs a single training episode for a Prototypical Network.
     # Arguments
         model: Prototypical Network to be trained.
@@ -72,7 +72,12 @@ def proto_step_fixed(device, model, optimiser, loss_fn, x, y, pid, k_shot, n_way
 
         s = meta_batch[:k_shot*n_way].view(-1, k_shot, 1, meta_batch.shape[-2], meta_batch.shape[-1]).float()
         q = meta_batch[k_shot*n_way:].view(-1, 1, meta_batch.shape[-2], meta_batch.shape[-1]).float()
-        q_ssl = mask_for_query(s).to(device)
+        q_ssl = mask_for_query(s, k).to(device)
+
+        # q_ssl, s_ssl = mask_for_query_s(s)
+        # s_ssl = s_ssl.view(1, -1, 1, meta_batch.shape[-2], meta_batch.shape[-1]).to(device)
+        # q_ssl = q_ssl.to(device)
+
         s = s.view(1, -1, 1, meta_batch.shape[-2], meta_batch.shape[-1])
         q = q.unsqueeze(0)
         # print(s.shape, q.shape, q_ssl.shape)

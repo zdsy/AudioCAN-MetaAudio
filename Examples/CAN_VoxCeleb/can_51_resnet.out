@@ -1,522 +1,0 @@
-no change     /home/ids/xzhuang/anaconda3/condabin/conda
-no change     /home/ids/xzhuang/anaconda3/bin/conda
-no change     /home/ids/xzhuang/anaconda3/bin/conda-env
-no change     /home/ids/xzhuang/anaconda3/bin/activate
-no change     /home/ids/xzhuang/anaconda3/bin/deactivate
-no change     /home/ids/xzhuang/anaconda3/etc/profile.d/conda.sh
-no change     /home/ids/xzhuang/anaconda3/etc/fish/conf.d/conda.fish
-no change     /home/ids/xzhuang/anaconda3/shell/condabin/Conda.psm1
-no change     /home/ids/xzhuang/anaconda3/shell/condabin/conda-hook.ps1
-no change     /home/ids/xzhuang/anaconda3/lib/python3.11/site-packages/xontrib/conda.xsh
-no change     /home/ids/xzhuang/anaconda3/etc/profile.d/conda.csh
-no change     /home/ids/xzhuang/.bashrc
-No action taken.
-{'CNN': {'in_channels': 1, 'trial_shape': [10, 1, 128, 157], 'hidden_channels': 64, 'pool_dim': [3, 3]}, 'Hybrid': {'in_channels': 1, 'seq_layers': 1, 'seq_type': 'RNN', 'bidirectional': False, 'hidden_channels': 64, 'pool_dim': [3, 3]}}
-
-
-
-
-
-
-cuda:0
-Starting Model: resent
-resent:   0%|          | 0/1 [00:00<?, ?it/s]Stats file found: global_VoxCeleb_5s_variable_spec_fixed__0.7_0.1_0.2.npy
-[[[-8.989776]]
-
- [[19.565844]]]
-Logging to file: logs/PROTO_CAN_VoxCeleb_5-1resent_global_1_runs_10000_seed_187_20_01__02_07.log
-
-Experiment Loop:   0%|          | 0/1000 [00:00<?, ?it/s][A
-Experiment Loop:   0%|          | 0/1000 [00:00<?, ?it/s, Pre_train=0, Post_train=0, Pre_val=0, Post_val=0][A
-Experiment Loop:   0%|          | 0/1000 [00:29<?, ?it/s, Pre_train=0, Post_train=0.32, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 0/1000 [00:30<?, ?it/s, Pre_train=0, Post_train=0.41, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 0/1000 [00:30<?, ?it/s, Pre_train=0, Post_train=0.35, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 0/1000 [00:31<?, ?it/s, Pre_train=0, Post_train=0.29, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 0/1000 [00:32<?, ?it/s, Pre_train=0, Post_train=0.43, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 0/1000 [00:33<?, ?it/s, Pre_train=0, Post_train=0.36, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 0/1000 [00:33<?, ?it/s, Pre_train=0, Post_train=0.35, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 0/1000 [00:34<?, ?it/s, Pre_train=0, Post_train=0.35, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 0/1000 [00:35<?, ?it/s, Pre_train=0, Post_train=0.41, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 0/1000 [00:35<?, ?it/s, Pre_train=0, Post_train=0.39, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 1/1000 [00:35<9:55:11, 35.75s/it, Pre_train=0, Post_train=0.39, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 1/1000 [00:36<9:55:11, 35.75s/it, Pre_train=0, Post_train=0.4, Pre_val=0, Post_val=0.34] [A
-Experiment Loop:   0%|          | 1/1000 [00:37<9:55:11, 35.75s/it, Pre_train=0, Post_train=0.33, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 1/1000 [00:37<9:55:11, 35.75s/it, Pre_train=0, Post_train=0.39, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 1/1000 [00:38<9:55:11, 35.75s/it, Pre_train=0, Post_train=0.32, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 1/1000 [00:39<9:55:11, 35.75s/it, Pre_train=0, Post_train=0.35, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 1/1000 [00:39<9:55:11, 35.75s/it, Pre_train=0, Post_train=0.42, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 1/1000 [00:40<9:55:11, 35.75s/it, Pre_train=0, Post_train=0.36, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 1/1000 [00:41<9:55:11, 35.75s/it, Pre_train=0, Post_train=0.31, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 1/1000 [00:41<9:55:11, 35.75s/it, Pre_train=0, Post_train=0.38, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 1/1000 [00:42<9:55:11, 35.75s/it, Pre_train=0, Post_train=0.29, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 2/1000 [00:42<5:12:01, 18.76s/it, Pre_train=0, Post_train=0.29, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 2/1000 [00:43<5:12:01, 18.76s/it, Pre_train=0, Post_train=0.37, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 2/1000 [00:43<5:12:01, 18.76s/it, Pre_train=0, Post_train=0.29, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 2/1000 [00:44<5:12:01, 18.76s/it, Pre_train=0, Post_train=0.29, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 2/1000 [00:45<5:12:01, 18.76s/it, Pre_train=0, Post_train=0.34, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 2/1000 [00:46<5:12:01, 18.76s/it, Pre_train=0, Post_train=0.4, Pre_val=0, Post_val=0.34] [A
-Experiment Loop:   0%|          | 2/1000 [00:46<5:12:01, 18.76s/it, Pre_train=0, Post_train=0.33, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 2/1000 [00:47<5:12:01, 18.76s/it, Pre_train=0, Post_train=0.37, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 2/1000 [00:48<5:12:01, 18.76s/it, Pre_train=0, Post_train=0.34, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 2/1000 [00:48<5:12:01, 18.76s/it, Pre_train=0, Post_train=0.39, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 2/1000 [00:49<5:12:01, 18.76s/it, Pre_train=0, Post_train=0.39, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 3/1000 [00:49<3:42:29, 13.39s/it, Pre_train=0, Post_train=0.39, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 3/1000 [00:50<3:42:29, 13.39s/it, Pre_train=0, Post_train=0.37, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 3/1000 [00:50<3:42:29, 13.39s/it, Pre_train=0, Post_train=0.35, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 3/1000 [00:51<3:42:29, 13.39s/it, Pre_train=0, Post_train=0.48, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 3/1000 [00:52<3:42:29, 13.39s/it, Pre_train=0, Post_train=0.39, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 3/1000 [00:53<3:42:29, 13.39s/it, Pre_train=0, Post_train=0.33, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 3/1000 [00:53<3:42:29, 13.39s/it, Pre_train=0, Post_train=0.38, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 3/1000 [00:54<3:42:29, 13.39s/it, Pre_train=0, Post_train=0.39, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 3/1000 [00:55<3:42:29, 13.39s/it, Pre_train=0, Post_train=0.4, Pre_val=0, Post_val=0.34] [A
-Experiment Loop:   0%|          | 3/1000 [00:55<3:42:29, 13.39s/it, Pre_train=0, Post_train=0.35, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 3/1000 [00:56<3:42:29, 13.39s/it, Pre_train=0, Post_train=0.37, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 4/1000 [00:56<2:59:33, 10.82s/it, Pre_train=0, Post_train=0.37, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 4/1000 [00:57<2:59:33, 10.82s/it, Pre_train=0, Post_train=0.32, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 4/1000 [00:57<2:59:33, 10.82s/it, Pre_train=0, Post_train=0.45, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 4/1000 [00:58<2:59:33, 10.82s/it, Pre_train=0, Post_train=0.38, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 4/1000 [00:59<2:59:33, 10.82s/it, Pre_train=0, Post_train=0.37, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 4/1000 [00:59<2:59:33, 10.82s/it, Pre_train=0, Post_train=0.31, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 4/1000 [01:00<2:59:33, 10.82s/it, Pre_train=0, Post_train=0.45, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 4/1000 [01:01<2:59:33, 10.82s/it, Pre_train=0, Post_train=0.44, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 4/1000 [01:01<2:59:33, 10.82s/it, Pre_train=0, Post_train=0.3, Pre_val=0, Post_val=0.34] [A
-Experiment Loop:   0%|          | 4/1000 [01:02<2:59:33, 10.82s/it, Pre_train=0, Post_train=0.43, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 4/1000 [01:03<2:59:33, 10.82s/it, Pre_train=0, Post_train=0.38, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 5/1000 [01:03<2:35:47,  9.39s/it, Pre_train=0, Post_train=0.38, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 5/1000 [01:04<2:35:47,  9.39s/it, Pre_train=0, Post_train=0.35, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 5/1000 [01:04<2:35:47,  9.39s/it, Pre_train=0, Post_train=0.42, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 5/1000 [01:05<2:35:47,  9.39s/it, Pre_train=0, Post_train=0.38, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 5/1000 [01:06<2:35:47,  9.39s/it, Pre_train=0, Post_train=0.38, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 5/1000 [01:06<2:35:47,  9.39s/it, Pre_train=0, Post_train=0.38, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 5/1000 [01:07<2:35:47,  9.39s/it, Pre_train=0, Post_train=0.31, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 5/1000 [01:08<2:35:47,  9.39s/it, Pre_train=0, Post_train=0.39, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 5/1000 [01:08<2:35:47,  9.39s/it, Pre_train=0, Post_train=0.42, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 5/1000 [01:09<2:35:47,  9.39s/it, Pre_train=0, Post_train=0.38, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   0%|          | 5/1000 [01:10<2:35:47,  9.39s/it, Pre_train=0, Post_train=0.38, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   1%|          | 6/1000 [01:10<2:21:31,  8.54s/it, Pre_train=0, Post_train=0.38, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   1%|          | 6/1000 [01:10<2:21:31,  8.54s/it, Pre_train=0, Post_train=0.36, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   1%|          | 6/1000 [01:11<2:21:31,  8.54s/it, Pre_train=0, Post_train=0.42, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   1%|          | 6/1000 [01:12<2:21:31,  8.54s/it, Pre_train=0, Post_train=0.43, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   1%|          | 6/1000 [01:12<2:21:31,  8.54s/it, Pre_train=0, Post_train=0.4, Pre_val=0, Post_val=0.34] [A
-Experiment Loop:   1%|          | 6/1000 [01:13<2:21:31,  8.54s/it, Pre_train=0, Post_train=0.4, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   1%|          | 6/1000 [01:14<2:21:31,  8.54s/it, Pre_train=0, Post_train=0.37, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   1%|          | 6/1000 [01:15<2:21:31,  8.54s/it, Pre_train=0, Post_train=0.34, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   1%|          | 6/1000 [01:16<2:21:31,  8.54s/it, Pre_train=0, Post_train=0.36, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   1%|          | 6/1000 [01:16<2:21:31,  8.54s/it, Pre_train=0, Post_train=0.4, Pre_val=0, Post_val=0.34] [A
-Experiment Loop:   1%|          | 6/1000 [01:17<2:21:31,  8.54s/it, Pre_train=0, Post_train=0.44, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   1%|          | 7/1000 [01:17<2:13:44,  8.08s/it, Pre_train=0, Post_train=0.44, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   1%|          | 7/1000 [01:18<2:13:44,  8.08s/it, Pre_train=0, Post_train=0.47, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   1%|          | 7/1000 [01:18<2:13:44,  8.08s/it, Pre_train=0, Post_train=0.36, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   1%|          | 7/1000 [01:19<2:13:44,  8.08s/it, Pre_train=0, Post_train=0.36, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   1%|          | 7/1000 [01:20<2:13:44,  8.08s/it, Pre_train=0, Post_train=0.36, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   1%|          | 7/1000 [01:20<2:13:44,  8.08s/it, Pre_train=0, Post_train=0.38, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   1%|          | 7/1000 [01:21<2:13:44,  8.08s/it, Pre_train=0, Post_train=0.39, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   1%|          | 7/1000 [01:22<2:13:44,  8.08s/it, Pre_train=0, Post_train=0.38, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   1%|          | 7/1000 [01:22<2:13:44,  8.08s/it, Pre_train=0, Post_train=0.36, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   1%|          | 7/1000 [01:23<2:13:44,  8.08s/it, Pre_train=0, Post_train=0.28, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   1%|          | 7/1000 [01:24<2:13:44,  8.08s/it, Pre_train=0, Post_train=0.41, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   1%|          | 8/1000 [01:24<2:07:30,  7.71s/it, Pre_train=0, Post_train=0.41, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   1%|          | 8/1000 [01:24<2:07:30,  7.71s/it, Pre_train=0, Post_train=0.35, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   1%|          | 8/1000 [01:25<2:07:30,  7.71s/it, Pre_train=0, Post_train=0.4, Pre_val=0, Post_val=0.34] [A
-Experiment Loop:   1%|          | 8/1000 [01:26<2:07:30,  7.71s/it, Pre_train=0, Post_train=0.4, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   1%|          | 8/1000 [01:27<2:07:30,  7.71s/it, Pre_train=0, Post_train=0.31, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   1%|          | 8/1000 [01:27<2:07:30,  7.71s/it, Pre_train=0, Post_train=0.38, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   1%|          | 8/1000 [01:28<2:07:30,  7.71s/it, Pre_train=0, Post_train=0.36, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   1%|          | 8/1000 [01:29<2:07:30,  7.71s/it, Pre_train=0, Post_train=0.44, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   1%|          | 8/1000 [01:29<2:07:30,  7.71s/it, Pre_train=0, Post_train=0.29, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   1%|          | 8/1000 [01:30<2:07:30,  7.71s/it, Pre_train=0, Post_train=0.31, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   1%|          | 8/1000 [01:31<2:07:30,  7.71s/it, Pre_train=0, Post_train=0.43, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   1%|          | 9/1000 [01:31<2:03:04,  7.45s/it, Pre_train=0, Post_train=0.43, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   1%|          | 9/1000 [01:31<2:03:04,  7.45s/it, Pre_train=0, Post_train=0.35, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   1%|          | 9/1000 [01:32<2:03:04,  7.45s/it, Pre_train=0, Post_train=0.37, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   1%|          | 9/1000 [01:33<2:03:04,  7.45s/it, Pre_train=0, Post_train=0.37, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   1%|          | 9/1000 [01:33<2:03:04,  7.45s/it, Pre_train=0, Post_train=0.44, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   1%|          | 9/1000 [01:34<2:03:04,  7.45s/it, Pre_train=0, Post_train=0.41, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   1%|          | 9/1000 [01:35<2:03:04,  7.45s/it, Pre_train=0, Post_train=0.39, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   1%|          | 9/1000 [01:35<2:03:04,  7.45s/it, Pre_train=0, Post_train=0.4, Pre_val=0, Post_val=0.34] [A
-Experiment Loop:   1%|          | 9/1000 [01:36<2:03:04,  7.45s/it, Pre_train=0, Post_train=0.5, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   1%|          | 9/1000 [01:37<2:03:04,  7.45s/it, Pre_train=0, Post_train=0.41, Pre_val=0, Post_val=0.34][A
-Experiment Loop:   1%|          | 9/1000 [02:06<2:03:04,  7.45s/it, Pre_train=0, Post_train=0.36, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|          | 10/1000 [02:06<4:23:52, 15.99s/it, Pre_train=0, Post_train=0.36, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|          | 10/1000 [02:06<4:23:52, 15.99s/it, Pre_train=0, Post_train=0.36, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|          | 10/1000 [02:07<4:23:52, 15.99s/it, Pre_train=0, Post_train=0.38, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|          | 10/1000 [02:08<4:23:52, 15.99s/it, Pre_train=0, Post_train=0.46, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|          | 10/1000 [02:09<4:23:52, 15.99s/it, Pre_train=0, Post_train=0.44, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|          | 10/1000 [02:09<4:23:52, 15.99s/it, Pre_train=0, Post_train=0.36, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|          | 10/1000 [02:10<4:23:52, 15.99s/it, Pre_train=0, Post_train=0.4, Pre_val=0, Post_val=0.38] [A
-Experiment Loop:   1%|          | 10/1000 [02:11<4:23:52, 15.99s/it, Pre_train=0, Post_train=0.37, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|          | 10/1000 [02:11<4:23:52, 15.99s/it, Pre_train=0, Post_train=0.39, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|          | 10/1000 [02:12<4:23:52, 15.99s/it, Pre_train=0, Post_train=0.36, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|          | 10/1000 [02:13<4:23:52, 15.99s/it, Pre_train=0, Post_train=0.35, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|          | 11/1000 [02:13<3:38:01, 13.23s/it, Pre_train=0, Post_train=0.35, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|          | 11/1000 [02:13<3:38:01, 13.23s/it, Pre_train=0, Post_train=0.34, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|          | 11/1000 [02:14<3:38:01, 13.23s/it, Pre_train=0, Post_train=0.46, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|          | 11/1000 [02:15<3:38:01, 13.23s/it, Pre_train=0, Post_train=0.43, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|          | 11/1000 [02:16<3:38:01, 13.23s/it, Pre_train=0, Post_train=0.42, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|          | 11/1000 [02:16<3:38:01, 13.23s/it, Pre_train=0, Post_train=0.37, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|          | 11/1000 [02:17<3:38:01, 13.23s/it, Pre_train=0, Post_train=0.37, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|          | 11/1000 [02:18<3:38:01, 13.23s/it, Pre_train=0, Post_train=0.4, Pre_val=0, Post_val=0.38] [A
-Experiment Loop:   1%|          | 11/1000 [02:18<3:38:01, 13.23s/it, Pre_train=0, Post_train=0.37, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|          | 11/1000 [02:19<3:38:01, 13.23s/it, Pre_train=0, Post_train=0.42, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|          | 11/1000 [02:20<3:38:01, 13.23s/it, Pre_train=0, Post_train=0.27, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|          | 12/1000 [02:20<3:06:23, 11.32s/it, Pre_train=0, Post_train=0.27, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|          | 12/1000 [02:20<3:06:23, 11.32s/it, Pre_train=0, Post_train=0.41, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|          | 12/1000 [02:21<3:06:23, 11.32s/it, Pre_train=0, Post_train=0.29, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|          | 12/1000 [02:22<3:06:23, 11.32s/it, Pre_train=0, Post_train=0.34, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|          | 12/1000 [02:22<3:06:23, 11.32s/it, Pre_train=0, Post_train=0.39, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|          | 12/1000 [02:23<3:06:23, 11.32s/it, Pre_train=0, Post_train=0.34, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|          | 12/1000 [02:24<3:06:23, 11.32s/it, Pre_train=0, Post_train=0.39, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|          | 12/1000 [02:25<3:06:23, 11.32s/it, Pre_train=0, Post_train=0.3, Pre_val=0, Post_val=0.38] [A
-Experiment Loop:   1%|          | 12/1000 [02:25<3:06:23, 11.32s/it, Pre_train=0, Post_train=0.38, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|          | 12/1000 [02:26<3:06:23, 11.32s/it, Pre_train=0, Post_train=0.49, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|          | 12/1000 [02:27<3:06:23, 11.32s/it, Pre_train=0, Post_train=0.45, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|▏         | 13/1000 [02:27<2:44:07,  9.98s/it, Pre_train=0, Post_train=0.45, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|▏         | 13/1000 [02:27<2:44:07,  9.98s/it, Pre_train=0, Post_train=0.39, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|▏         | 13/1000 [02:28<2:44:07,  9.98s/it, Pre_train=0, Post_train=0.44, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|▏         | 13/1000 [02:29<2:44:07,  9.98s/it, Pre_train=0, Post_train=0.46, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|▏         | 13/1000 [02:29<2:44:07,  9.98s/it, Pre_train=0, Post_train=0.4, Pre_val=0, Post_val=0.38] [A
-Experiment Loop:   1%|▏         | 13/1000 [02:30<2:44:07,  9.98s/it, Pre_train=0, Post_train=0.43, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|▏         | 13/1000 [02:31<2:44:07,  9.98s/it, Pre_train=0, Post_train=0.48, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|▏         | 13/1000 [02:31<2:44:07,  9.98s/it, Pre_train=0, Post_train=0.49, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|▏         | 13/1000 [02:32<2:44:07,  9.98s/it, Pre_train=0, Post_train=0.47, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|▏         | 13/1000 [02:33<2:44:07,  9.98s/it, Pre_train=0, Post_train=0.44, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|▏         | 13/1000 [02:33<2:44:07,  9.98s/it, Pre_train=0, Post_train=0.42, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|▏         | 14/1000 [02:33<2:28:38,  9.05s/it, Pre_train=0, Post_train=0.42, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|▏         | 14/1000 [02:34<2:28:38,  9.05s/it, Pre_train=0, Post_train=0.43, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|▏         | 14/1000 [02:35<2:28:38,  9.05s/it, Pre_train=0, Post_train=0.5, Pre_val=0, Post_val=0.38] [A
-Experiment Loop:   1%|▏         | 14/1000 [02:36<2:28:38,  9.05s/it, Pre_train=0, Post_train=0.35, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|▏         | 14/1000 [02:36<2:28:38,  9.05s/it, Pre_train=0, Post_train=0.4, Pre_val=0, Post_val=0.38] [A
-Experiment Loop:   1%|▏         | 14/1000 [02:37<2:28:38,  9.05s/it, Pre_train=0, Post_train=0.35, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|▏         | 14/1000 [02:38<2:28:38,  9.05s/it, Pre_train=0, Post_train=0.44, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|▏         | 14/1000 [02:38<2:28:38,  9.05s/it, Pre_train=0, Post_train=0.35, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|▏         | 14/1000 [02:39<2:28:38,  9.05s/it, Pre_train=0, Post_train=0.49, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|▏         | 14/1000 [02:40<2:28:38,  9.05s/it, Pre_train=0, Post_train=0.43, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   1%|▏         | 14/1000 [02:40<2:28:38,  9.05s/it, Pre_train=0, Post_train=0.44, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 15/1000 [02:40<2:17:46,  8.39s/it, Pre_train=0, Post_train=0.44, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 15/1000 [02:41<2:17:46,  8.39s/it, Pre_train=0, Post_train=0.47, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 15/1000 [02:42<2:17:46,  8.39s/it, Pre_train=0, Post_train=0.38, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 15/1000 [02:42<2:17:46,  8.39s/it, Pre_train=0, Post_train=0.44, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 15/1000 [02:43<2:17:46,  8.39s/it, Pre_train=0, Post_train=0.41, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 15/1000 [02:44<2:17:46,  8.39s/it, Pre_train=0, Post_train=0.54, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 15/1000 [02:44<2:17:46,  8.39s/it, Pre_train=0, Post_train=0.38, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 15/1000 [02:45<2:17:46,  8.39s/it, Pre_train=0, Post_train=0.43, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 15/1000 [02:46<2:17:46,  8.39s/it, Pre_train=0, Post_train=0.41, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 15/1000 [02:47<2:17:46,  8.39s/it, Pre_train=0, Post_train=0.51, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 15/1000 [02:47<2:17:46,  8.39s/it, Pre_train=0, Post_train=0.39, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 16/1000 [02:47<2:10:06,  7.93s/it, Pre_train=0, Post_train=0.39, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 16/1000 [02:48<2:10:06,  7.93s/it, Pre_train=0, Post_train=0.35, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 16/1000 [02:49<2:10:06,  7.93s/it, Pre_train=0, Post_train=0.47, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 16/1000 [02:49<2:10:06,  7.93s/it, Pre_train=0, Post_train=0.45, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 16/1000 [02:50<2:10:06,  7.93s/it, Pre_train=0, Post_train=0.38, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 16/1000 [02:51<2:10:06,  7.93s/it, Pre_train=0, Post_train=0.42, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 16/1000 [02:51<2:10:06,  7.93s/it, Pre_train=0, Post_train=0.39, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 16/1000 [02:52<2:10:06,  7.93s/it, Pre_train=0, Post_train=0.41, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 16/1000 [02:53<2:10:06,  7.93s/it, Pre_train=0, Post_train=0.38, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 16/1000 [02:53<2:10:06,  7.93s/it, Pre_train=0, Post_train=0.47, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 16/1000 [02:54<2:10:06,  7.93s/it, Pre_train=0, Post_train=0.43, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 17/1000 [02:54<2:04:58,  7.63s/it, Pre_train=0, Post_train=0.43, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 17/1000 [02:55<2:04:58,  7.63s/it, Pre_train=0, Post_train=0.47, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 17/1000 [02:56<2:04:58,  7.63s/it, Pre_train=0, Post_train=0.43, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 17/1000 [02:56<2:04:58,  7.63s/it, Pre_train=0, Post_train=0.41, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 17/1000 [02:57<2:04:58,  7.63s/it, Pre_train=0, Post_train=0.35, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 17/1000 [02:58<2:04:58,  7.63s/it, Pre_train=0, Post_train=0.49, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 17/1000 [02:58<2:04:58,  7.63s/it, Pre_train=0, Post_train=0.44, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 17/1000 [02:59<2:04:58,  7.63s/it, Pre_train=0, Post_train=0.46, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 17/1000 [03:00<2:04:58,  7.63s/it, Pre_train=0, Post_train=0.42, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 17/1000 [03:00<2:04:58,  7.63s/it, Pre_train=0, Post_train=0.4, Pre_val=0, Post_val=0.38] [A
-Experiment Loop:   2%|▏         | 17/1000 [03:01<2:04:58,  7.63s/it, Pre_train=0, Post_train=0.39, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 18/1000 [03:01<2:01:44,  7.44s/it, Pre_train=0, Post_train=0.39, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 18/1000 [03:02<2:01:44,  7.44s/it, Pre_train=0, Post_train=0.5, Pre_val=0, Post_val=0.38] [A
-Experiment Loop:   2%|▏         | 18/1000 [03:03<2:01:44,  7.44s/it, Pre_train=0, Post_train=0.4, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 18/1000 [03:03<2:01:44,  7.44s/it, Pre_train=0, Post_train=0.45, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 18/1000 [03:04<2:01:44,  7.44s/it, Pre_train=0, Post_train=0.48, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 18/1000 [03:05<2:01:44,  7.44s/it, Pre_train=0, Post_train=0.35, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 18/1000 [03:05<2:01:44,  7.44s/it, Pre_train=0, Post_train=0.45, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 18/1000 [03:06<2:01:44,  7.44s/it, Pre_train=0, Post_train=0.4, Pre_val=0, Post_val=0.38] [A
-Experiment Loop:   2%|▏         | 18/1000 [03:07<2:01:44,  7.44s/it, Pre_train=0, Post_train=0.43, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 18/1000 [03:07<2:01:44,  7.44s/it, Pre_train=0, Post_train=0.52, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 18/1000 [03:08<2:01:44,  7.44s/it, Pre_train=0, Post_train=0.41, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 19/1000 [03:08<1:58:56,  7.28s/it, Pre_train=0, Post_train=0.41, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 19/1000 [03:09<1:58:56,  7.28s/it, Pre_train=0, Post_train=0.4, Pre_val=0, Post_val=0.38] [A
-Experiment Loop:   2%|▏         | 19/1000 [03:09<1:58:56,  7.28s/it, Pre_train=0, Post_train=0.46, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 19/1000 [03:10<1:58:56,  7.28s/it, Pre_train=0, Post_train=0.41, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 19/1000 [03:11<1:58:56,  7.28s/it, Pre_train=0, Post_train=0.46, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 19/1000 [03:11<1:58:56,  7.28s/it, Pre_train=0, Post_train=0.43, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 19/1000 [03:12<1:58:56,  7.28s/it, Pre_train=0, Post_train=0.39, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 19/1000 [03:13<1:58:56,  7.28s/it, Pre_train=0, Post_train=0.38, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 19/1000 [03:14<1:58:56,  7.28s/it, Pre_train=0, Post_train=0.37, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 19/1000 [03:14<1:58:56,  7.28s/it, Pre_train=0, Post_train=0.48, Pre_val=0, Post_val=0.38][A
-Experiment Loop:   2%|▏         | 19/1000 [03:44<1:58:56,  7.28s/it, Pre_train=0, Post_train=0.42, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 20/1000 [03:44<4:17:40, 15.78s/it, Pre_train=0, Post_train=0.42, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 20/1000 [03:44<4:17:40, 15.78s/it, Pre_train=0, Post_train=0.42, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 20/1000 [03:45<4:17:40, 15.78s/it, Pre_train=0, Post_train=0.4, Pre_val=0, Post_val=0.42] [A
-Experiment Loop:   2%|▏         | 20/1000 [03:46<4:17:40, 15.78s/it, Pre_train=0, Post_train=0.39, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 20/1000 [03:46<4:17:40, 15.78s/it, Pre_train=0, Post_train=0.43, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 20/1000 [03:47<4:17:40, 15.78s/it, Pre_train=0, Post_train=0.41, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 20/1000 [03:48<4:17:40, 15.78s/it, Pre_train=0, Post_train=0.46, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 20/1000 [03:48<4:17:40, 15.78s/it, Pre_train=0, Post_train=0.54, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 20/1000 [03:49<4:17:40, 15.78s/it, Pre_train=0, Post_train=0.47, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 20/1000 [03:50<4:17:40, 15.78s/it, Pre_train=0, Post_train=0.43, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 20/1000 [03:51<4:17:40, 15.78s/it, Pre_train=0, Post_train=0.37, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 21/1000 [03:51<3:33:50, 13.11s/it, Pre_train=0, Post_train=0.37, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 21/1000 [03:51<3:33:50, 13.11s/it, Pre_train=0, Post_train=0.41, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 21/1000 [03:52<3:33:50, 13.11s/it, Pre_train=0, Post_train=0.47, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 21/1000 [03:53<3:33:50, 13.11s/it, Pre_train=0, Post_train=0.43, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 21/1000 [03:53<3:33:50, 13.11s/it, Pre_train=0, Post_train=0.5, Pre_val=0, Post_val=0.42] [A
-Experiment Loop:   2%|▏         | 21/1000 [03:54<3:33:50, 13.11s/it, Pre_train=0, Post_train=0.41, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 21/1000 [03:55<3:33:50, 13.11s/it, Pre_train=0, Post_train=0.5, Pre_val=0, Post_val=0.42] [A
-Experiment Loop:   2%|▏         | 21/1000 [03:55<3:33:50, 13.11s/it, Pre_train=0, Post_train=0.4, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 21/1000 [03:56<3:33:50, 13.11s/it, Pre_train=0, Post_train=0.4, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 21/1000 [03:57<3:33:50, 13.11s/it, Pre_train=0, Post_train=0.45, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 21/1000 [03:57<3:33:50, 13.11s/it, Pre_train=0, Post_train=0.4, Pre_val=0, Post_val=0.42] [A
-Experiment Loop:   2%|▏         | 22/1000 [03:57<3:03:11, 11.24s/it, Pre_train=0, Post_train=0.4, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 22/1000 [03:58<3:03:11, 11.24s/it, Pre_train=0, Post_train=0.46, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 22/1000 [03:59<3:03:11, 11.24s/it, Pre_train=0, Post_train=0.45, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 22/1000 [03:59<3:03:11, 11.24s/it, Pre_train=0, Post_train=0.43, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 22/1000 [04:00<3:03:11, 11.24s/it, Pre_train=0, Post_train=0.43, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 22/1000 [04:01<3:03:11, 11.24s/it, Pre_train=0, Post_train=0.31, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 22/1000 [04:02<3:03:11, 11.24s/it, Pre_train=0, Post_train=0.43, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 22/1000 [04:02<3:03:11, 11.24s/it, Pre_train=0, Post_train=0.47, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 22/1000 [04:03<3:03:11, 11.24s/it, Pre_train=0, Post_train=0.45, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 22/1000 [04:04<3:03:11, 11.24s/it, Pre_train=0, Post_train=0.46, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 22/1000 [04:04<3:03:11, 11.24s/it, Pre_train=0, Post_train=0.48, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 23/1000 [04:04<2:41:51,  9.94s/it, Pre_train=0, Post_train=0.48, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 23/1000 [04:05<2:41:51,  9.94s/it, Pre_train=0, Post_train=0.5, Pre_val=0, Post_val=0.42] [A
-Experiment Loop:   2%|▏         | 23/1000 [04:06<2:41:51,  9.94s/it, Pre_train=0, Post_train=0.46, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 23/1000 [04:06<2:41:51,  9.94s/it, Pre_train=0, Post_train=0.42, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 23/1000 [04:07<2:41:51,  9.94s/it, Pre_train=0, Post_train=0.52, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 23/1000 [04:08<2:41:51,  9.94s/it, Pre_train=0, Post_train=0.47, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 23/1000 [04:08<2:41:51,  9.94s/it, Pre_train=0, Post_train=0.49, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 23/1000 [04:09<2:41:51,  9.94s/it, Pre_train=0, Post_train=0.42, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 23/1000 [04:10<2:41:51,  9.94s/it, Pre_train=0, Post_train=0.45, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 23/1000 [04:11<2:41:51,  9.94s/it, Pre_train=0, Post_train=0.34, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 23/1000 [04:11<2:41:51,  9.94s/it, Pre_train=0, Post_train=0.36, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 24/1000 [04:11<2:26:56,  9.03s/it, Pre_train=0, Post_train=0.36, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 24/1000 [04:12<2:26:56,  9.03s/it, Pre_train=0, Post_train=0.48, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 24/1000 [04:13<2:26:56,  9.03s/it, Pre_train=0, Post_train=0.42, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 24/1000 [04:13<2:26:56,  9.03s/it, Pre_train=0, Post_train=0.45, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 24/1000 [04:14<2:26:56,  9.03s/it, Pre_train=0, Post_train=0.44, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 24/1000 [04:15<2:26:56,  9.03s/it, Pre_train=0, Post_train=0.48, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 24/1000 [04:15<2:26:56,  9.03s/it, Pre_train=0, Post_train=0.48, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 24/1000 [04:16<2:26:56,  9.03s/it, Pre_train=0, Post_train=0.45, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 24/1000 [04:17<2:26:56,  9.03s/it, Pre_train=0, Post_train=0.41, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 24/1000 [04:18<2:26:56,  9.03s/it, Pre_train=0, Post_train=0.44, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▏         | 24/1000 [04:18<2:26:56,  9.03s/it, Pre_train=0, Post_train=0.43, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▎         | 25/1000 [04:18<2:16:48,  8.42s/it, Pre_train=0, Post_train=0.43, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▎         | 25/1000 [04:19<2:16:48,  8.42s/it, Pre_train=0, Post_train=0.48, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▎         | 25/1000 [04:20<2:16:48,  8.42s/it, Pre_train=0, Post_train=0.35, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▎         | 25/1000 [04:20<2:16:48,  8.42s/it, Pre_train=0, Post_train=0.44, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▎         | 25/1000 [04:21<2:16:48,  8.42s/it, Pre_train=0, Post_train=0.43, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▎         | 25/1000 [04:22<2:16:48,  8.42s/it, Pre_train=0, Post_train=0.49, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▎         | 25/1000 [04:22<2:16:48,  8.42s/it, Pre_train=0, Post_train=0.51, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▎         | 25/1000 [04:23<2:16:48,  8.42s/it, Pre_train=0, Post_train=0.52, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▎         | 25/1000 [04:24<2:16:48,  8.42s/it, Pre_train=0, Post_train=0.27, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▎         | 25/1000 [04:24<2:16:48,  8.42s/it, Pre_train=0, Post_train=0.46, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   2%|▎         | 25/1000 [04:25<2:16:48,  8.42s/it, Pre_train=0, Post_train=0.55, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   3%|▎         | 26/1000 [04:25<2:09:11,  7.96s/it, Pre_train=0, Post_train=0.55, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   3%|▎         | 26/1000 [04:26<2:09:11,  7.96s/it, Pre_train=0, Post_train=0.41, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   3%|▎         | 26/1000 [04:26<2:09:11,  7.96s/it, Pre_train=0, Post_train=0.55, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   3%|▎         | 26/1000 [04:27<2:09:11,  7.96s/it, Pre_train=0, Post_train=0.5, Pre_val=0, Post_val=0.42] [A
-Experiment Loop:   3%|▎         | 26/1000 [04:28<2:09:11,  7.96s/it, Pre_train=0, Post_train=0.5, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   3%|▎         | 26/1000 [04:29<2:09:11,  7.96s/it, Pre_train=0, Post_train=0.37, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   3%|▎         | 26/1000 [04:30<2:09:11,  7.96s/it, Pre_train=0, Post_train=0.46, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   3%|▎         | 26/1000 [04:30<2:09:11,  7.96s/it, Pre_train=0, Post_train=0.53, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   3%|▎         | 26/1000 [04:31<2:09:11,  7.96s/it, Pre_train=0, Post_train=0.33, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   3%|▎         | 26/1000 [04:32<2:09:11,  7.96s/it, Pre_train=0, Post_train=0.45, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   3%|▎         | 26/1000 [04:32<2:09:11,  7.96s/it, Pre_train=0, Post_train=0.44, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   3%|▎         | 27/1000 [04:32<2:06:16,  7.79s/it, Pre_train=0, Post_train=0.44, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   3%|▎         | 27/1000 [04:33<2:06:16,  7.79s/it, Pre_train=0, Post_train=0.42, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   3%|▎         | 27/1000 [04:34<2:06:16,  7.79s/it, Pre_train=0, Post_train=0.36, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   3%|▎         | 27/1000 [04:35<2:06:16,  7.79s/it, Pre_train=0, Post_train=0.5, Pre_val=0, Post_val=0.42] [A
-Experiment Loop:   3%|▎         | 27/1000 [04:35<2:06:16,  7.79s/it, Pre_train=0, Post_train=0.55, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   3%|▎         | 27/1000 [04:36<2:06:16,  7.79s/it, Pre_train=0, Post_train=0.54, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   3%|▎         | 27/1000 [04:37<2:06:16,  7.79s/it, Pre_train=0, Post_train=0.43, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   3%|▎         | 27/1000 [04:37<2:06:16,  7.79s/it, Pre_train=0, Post_train=0.46, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   3%|▎         | 27/1000 [04:38<2:06:16,  7.79s/it, Pre_train=0, Post_train=0.48, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   3%|▎         | 27/1000 [04:39<2:06:16,  7.79s/it, Pre_train=0, Post_train=0.42, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   3%|▎         | 27/1000 [04:39<2:06:16,  7.79s/it, Pre_train=0, Post_train=0.51, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   3%|▎         | 28/1000 [04:39<2:01:50,  7.52s/it, Pre_train=0, Post_train=0.51, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   3%|▎         | 28/1000 [04:40<2:01:50,  7.52s/it, Pre_train=0, Post_train=0.41, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   3%|▎         | 28/1000 [04:41<2:01:50,  7.52s/it, Pre_train=0, Post_train=0.51, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   3%|▎         | 28/1000 [04:41<2:01:50,  7.52s/it, Pre_train=0, Post_train=0.5, Pre_val=0, Post_val=0.42] [A
-Experiment Loop:   3%|▎         | 28/1000 [04:42<2:01:50,  7.52s/it, Pre_train=0, Post_train=0.46, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   3%|▎         | 28/1000 [04:43<2:01:50,  7.52s/it, Pre_train=0, Post_train=0.48, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   3%|▎         | 28/1000 [04:44<2:01:50,  7.52s/it, Pre_train=0, Post_train=0.49, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   3%|▎         | 28/1000 [04:44<2:01:50,  7.52s/it, Pre_train=0, Post_train=0.51, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   3%|▎         | 28/1000 [04:45<2:01:50,  7.52s/it, Pre_train=0, Post_train=0.53, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   3%|▎         | 28/1000 [04:46<2:01:50,  7.52s/it, Pre_train=0, Post_train=0.45, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   3%|▎         | 28/1000 [04:46<2:01:50,  7.52s/it, Pre_train=0, Post_train=0.39, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   3%|▎         | 29/1000 [04:46<1:58:41,  7.33s/it, Pre_train=0, Post_train=0.39, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   3%|▎         | 29/1000 [04:47<1:58:41,  7.33s/it, Pre_train=0, Post_train=0.55, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   3%|▎         | 29/1000 [04:48<1:58:41,  7.33s/it, Pre_train=0, Post_train=0.42, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   3%|▎         | 29/1000 [04:48<1:58:41,  7.33s/it, Pre_train=0, Post_train=0.45, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   3%|▎         | 29/1000 [04:49<1:58:41,  7.33s/it, Pre_train=0, Post_train=0.49, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   3%|▎         | 29/1000 [04:50<1:58:41,  7.33s/it, Pre_train=0, Post_train=0.45, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   3%|▎         | 29/1000 [04:50<1:58:41,  7.33s/it, Pre_train=0, Post_train=0.43, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   3%|▎         | 29/1000 [04:51<1:58:41,  7.33s/it, Pre_train=0, Post_train=0.37, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   3%|▎         | 29/1000 [04:52<1:58:41,  7.33s/it, Pre_train=0, Post_train=0.39, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   3%|▎         | 29/1000 [04:52<1:58:41,  7.33s/it, Pre_train=0, Post_train=0.52, Pre_val=0, Post_val=0.42][A
-Experiment Loop:   3%|▎         | 29/1000 [05:22<1:58:41,  7.33s/it, Pre_train=0, Post_train=0.44, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 30/1000 [05:22<4:13:49, 15.70s/it, Pre_train=0, Post_train=0.44, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 30/1000 [05:22<4:13:49, 15.70s/it, Pre_train=0, Post_train=0.43, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 30/1000 [05:23<4:13:49, 15.70s/it, Pre_train=0, Post_train=0.42, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 30/1000 [05:24<4:13:49, 15.70s/it, Pre_train=0, Post_train=0.48, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 30/1000 [05:24<4:13:49, 15.70s/it, Pre_train=0, Post_train=0.47, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 30/1000 [05:25<4:13:49, 15.70s/it, Pre_train=0, Post_train=0.49, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 30/1000 [05:26<4:13:49, 15.70s/it, Pre_train=0, Post_train=0.52, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 30/1000 [05:26<4:13:49, 15.70s/it, Pre_train=0, Post_train=0.36, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 30/1000 [05:27<4:13:49, 15.70s/it, Pre_train=0, Post_train=0.46, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 30/1000 [05:28<4:13:49, 15.70s/it, Pre_train=0, Post_train=0.48, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 30/1000 [05:28<4:13:49, 15.70s/it, Pre_train=0, Post_train=0.51, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 31/1000 [05:28<3:30:52, 13.06s/it, Pre_train=0, Post_train=0.51, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 31/1000 [05:29<3:30:52, 13.06s/it, Pre_train=0, Post_train=0.54, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 31/1000 [05:30<3:30:52, 13.06s/it, Pre_train=0, Post_train=0.46, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 31/1000 [05:31<3:30:52, 13.06s/it, Pre_train=0, Post_train=0.45, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 31/1000 [05:31<3:30:52, 13.06s/it, Pre_train=0, Post_train=0.43, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 31/1000 [05:32<3:30:52, 13.06s/it, Pre_train=0, Post_train=0.42, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 31/1000 [05:33<3:30:52, 13.06s/it, Pre_train=0, Post_train=0.48, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 31/1000 [05:33<3:30:52, 13.06s/it, Pre_train=0, Post_train=0.39, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 31/1000 [05:34<3:30:52, 13.06s/it, Pre_train=0, Post_train=0.52, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 31/1000 [05:35<3:30:52, 13.06s/it, Pre_train=0, Post_train=0.5, Pre_val=0, Post_val=0.45] [A
-Experiment Loop:   3%|▎         | 31/1000 [05:36<3:30:52, 13.06s/it, Pre_train=0, Post_train=0.46, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 32/1000 [05:36<3:02:12, 11.29s/it, Pre_train=0, Post_train=0.46, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 32/1000 [05:36<3:02:12, 11.29s/it, Pre_train=0, Post_train=0.49, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 32/1000 [05:37<3:02:12, 11.29s/it, Pre_train=0, Post_train=0.44, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 32/1000 [05:38<3:02:12, 11.29s/it, Pre_train=0, Post_train=0.42, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 32/1000 [05:38<3:02:12, 11.29s/it, Pre_train=0, Post_train=0.46, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 32/1000 [05:39<3:02:12, 11.29s/it, Pre_train=0, Post_train=0.49, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 32/1000 [05:40<3:02:12, 11.29s/it, Pre_train=0, Post_train=0.47, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 32/1000 [05:40<3:02:12, 11.29s/it, Pre_train=0, Post_train=0.52, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 32/1000 [05:41<3:02:12, 11.29s/it, Pre_train=0, Post_train=0.48, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 32/1000 [05:42<3:02:12, 11.29s/it, Pre_train=0, Post_train=0.47, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 32/1000 [05:42<3:02:12, 11.29s/it, Pre_train=0, Post_train=0.46, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 33/1000 [05:42<2:40:51,  9.98s/it, Pre_train=0, Post_train=0.46, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 33/1000 [05:43<2:40:51,  9.98s/it, Pre_train=0, Post_train=0.47, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 33/1000 [05:44<2:40:51,  9.98s/it, Pre_train=0, Post_train=0.48, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 33/1000 [05:45<2:40:51,  9.98s/it, Pre_train=0, Post_train=0.44, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 33/1000 [05:45<2:40:51,  9.98s/it, Pre_train=0, Post_train=0.52, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 33/1000 [05:46<2:40:51,  9.98s/it, Pre_train=0, Post_train=0.57, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 33/1000 [05:47<2:40:51,  9.98s/it, Pre_train=0, Post_train=0.48, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 33/1000 [05:47<2:40:51,  9.98s/it, Pre_train=0, Post_train=0.52, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 33/1000 [05:48<2:40:51,  9.98s/it, Pre_train=0, Post_train=0.43, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 33/1000 [05:49<2:40:51,  9.98s/it, Pre_train=0, Post_train=0.46, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 33/1000 [05:49<2:40:51,  9.98s/it, Pre_train=0, Post_train=0.47, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 34/1000 [05:49<2:25:51,  9.06s/it, Pre_train=0, Post_train=0.47, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 34/1000 [05:50<2:25:51,  9.06s/it, Pre_train=0, Post_train=0.43, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 34/1000 [05:51<2:25:51,  9.06s/it, Pre_train=0, Post_train=0.49, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 34/1000 [05:51<2:25:51,  9.06s/it, Pre_train=0, Post_train=0.41, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 34/1000 [05:52<2:25:51,  9.06s/it, Pre_train=0, Post_train=0.44, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 34/1000 [05:53<2:25:51,  9.06s/it, Pre_train=0, Post_train=0.48, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 34/1000 [05:54<2:25:51,  9.06s/it, Pre_train=0, Post_train=0.41, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 34/1000 [05:54<2:25:51,  9.06s/it, Pre_train=0, Post_train=0.51, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 34/1000 [05:55<2:25:51,  9.06s/it, Pre_train=0, Post_train=0.48, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   3%|▎         | 34/1000 [05:56<2:25:51,  9.06s/it, Pre_train=0, Post_train=0.5, Pre_val=0, Post_val=0.45] [A
-Experiment Loop:   3%|▎         | 34/1000 [05:56<2:25:51,  9.06s/it, Pre_train=0, Post_train=0.49, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▎         | 35/1000 [05:56<2:15:17,  8.41s/it, Pre_train=0, Post_train=0.49, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▎         | 35/1000 [05:57<2:15:17,  8.41s/it, Pre_train=0, Post_train=0.5, Pre_val=0, Post_val=0.45] [A
-Experiment Loop:   4%|▎         | 35/1000 [05:58<2:15:17,  8.41s/it, Pre_train=0, Post_train=0.46, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▎         | 35/1000 [05:58<2:15:17,  8.41s/it, Pre_train=0, Post_train=0.57, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▎         | 35/1000 [05:59<2:15:17,  8.41s/it, Pre_train=0, Post_train=0.49, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▎         | 35/1000 [06:00<2:15:17,  8.41s/it, Pre_train=0, Post_train=0.44, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▎         | 35/1000 [06:00<2:15:17,  8.41s/it, Pre_train=0, Post_train=0.48, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▎         | 35/1000 [06:01<2:15:17,  8.41s/it, Pre_train=0, Post_train=0.41, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▎         | 35/1000 [06:02<2:15:17,  8.41s/it, Pre_train=0, Post_train=0.48, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▎         | 35/1000 [06:03<2:15:17,  8.41s/it, Pre_train=0, Post_train=0.4, Pre_val=0, Post_val=0.45] [A
-Experiment Loop:   4%|▎         | 35/1000 [06:03<2:15:17,  8.41s/it, Pre_train=0, Post_train=0.48, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▎         | 36/1000 [06:03<2:07:47,  7.95s/it, Pre_train=0, Post_train=0.48, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▎         | 36/1000 [06:04<2:07:47,  7.95s/it, Pre_train=0, Post_train=0.51, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▎         | 36/1000 [06:05<2:07:47,  7.95s/it, Pre_train=0, Post_train=0.43, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▎         | 36/1000 [06:05<2:07:47,  7.95s/it, Pre_train=0, Post_train=0.6, Pre_val=0, Post_val=0.45] [A
-Experiment Loop:   4%|▎         | 36/1000 [06:06<2:07:47,  7.95s/it, Pre_train=0, Post_train=0.45, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▎         | 36/1000 [06:07<2:07:47,  7.95s/it, Pre_train=0, Post_train=0.59, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▎         | 36/1000 [06:07<2:07:47,  7.95s/it, Pre_train=0, Post_train=0.48, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▎         | 36/1000 [06:08<2:07:47,  7.95s/it, Pre_train=0, Post_train=0.49, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▎         | 36/1000 [06:09<2:07:47,  7.95s/it, Pre_train=0, Post_train=0.53, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▎         | 36/1000 [06:09<2:07:47,  7.95s/it, Pre_train=0, Post_train=0.5, Pre_val=0, Post_val=0.45] [A
-Experiment Loop:   4%|▎         | 36/1000 [06:10<2:07:47,  7.95s/it, Pre_train=0, Post_train=0.47, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▎         | 37/1000 [06:10<2:02:37,  7.64s/it, Pre_train=0, Post_train=0.47, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▎         | 37/1000 [06:11<2:02:37,  7.64s/it, Pre_train=0, Post_train=0.43, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▎         | 37/1000 [06:11<2:02:37,  7.64s/it, Pre_train=0, Post_train=0.5, Pre_val=0, Post_val=0.45] [A
-Experiment Loop:   4%|▎         | 37/1000 [06:12<2:02:37,  7.64s/it, Pre_train=0, Post_train=0.41, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▎         | 37/1000 [06:13<2:02:37,  7.64s/it, Pre_train=0, Post_train=0.36, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▎         | 37/1000 [06:14<2:02:37,  7.64s/it, Pre_train=0, Post_train=0.48, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▎         | 37/1000 [06:14<2:02:37,  7.64s/it, Pre_train=0, Post_train=0.47, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▎         | 37/1000 [06:15<2:02:37,  7.64s/it, Pre_train=0, Post_train=0.48, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▎         | 37/1000 [06:16<2:02:37,  7.64s/it, Pre_train=0, Post_train=0.4, Pre_val=0, Post_val=0.45] [A
-Experiment Loop:   4%|▎         | 37/1000 [06:16<2:02:37,  7.64s/it, Pre_train=0, Post_train=0.5, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▎         | 37/1000 [06:17<2:02:37,  7.64s/it, Pre_train=0, Post_train=0.58, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▍         | 38/1000 [06:17<1:59:04,  7.43s/it, Pre_train=0, Post_train=0.58, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▍         | 38/1000 [06:18<1:59:04,  7.43s/it, Pre_train=0, Post_train=0.51, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▍         | 38/1000 [06:18<1:59:04,  7.43s/it, Pre_train=0, Post_train=0.62, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▍         | 38/1000 [06:19<1:59:04,  7.43s/it, Pre_train=0, Post_train=0.53, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▍         | 38/1000 [06:20<1:59:04,  7.43s/it, Pre_train=0, Post_train=0.47, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▍         | 38/1000 [06:20<1:59:04,  7.43s/it, Pre_train=0, Post_train=0.44, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▍         | 38/1000 [06:21<1:59:04,  7.43s/it, Pre_train=0, Post_train=0.5, Pre_val=0, Post_val=0.45] [A
-Experiment Loop:   4%|▍         | 38/1000 [06:22<1:59:04,  7.43s/it, Pre_train=0, Post_train=0.43, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▍         | 38/1000 [06:23<1:59:04,  7.43s/it, Pre_train=0, Post_train=0.54, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▍         | 38/1000 [06:23<1:59:04,  7.43s/it, Pre_train=0, Post_train=0.49, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▍         | 38/1000 [06:24<1:59:04,  7.43s/it, Pre_train=0, Post_train=0.4, Pre_val=0, Post_val=0.45] [A
-Experiment Loop:   4%|▍         | 39/1000 [06:24<1:56:36,  7.28s/it, Pre_train=0, Post_train=0.4, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▍         | 39/1000 [06:25<1:56:36,  7.28s/it, Pre_train=0, Post_train=0.53, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▍         | 39/1000 [06:25<1:56:36,  7.28s/it, Pre_train=0, Post_train=0.43, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▍         | 39/1000 [06:26<1:56:36,  7.28s/it, Pre_train=0, Post_train=0.59, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▍         | 39/1000 [06:27<1:56:36,  7.28s/it, Pre_train=0, Post_train=0.5, Pre_val=0, Post_val=0.45] [A
-Experiment Loop:   4%|▍         | 39/1000 [06:27<1:56:36,  7.28s/it, Pre_train=0, Post_train=0.5, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▍         | 39/1000 [06:28<1:56:36,  7.28s/it, Pre_train=0, Post_train=0.49, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▍         | 39/1000 [06:29<1:56:36,  7.28s/it, Pre_train=0, Post_train=0.55, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▍         | 39/1000 [06:30<1:56:36,  7.28s/it, Pre_train=0, Post_train=0.47, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▍         | 39/1000 [06:30<1:56:36,  7.28s/it, Pre_train=0, Post_train=0.34, Pre_val=0, Post_val=0.45][A
-Experiment Loop:   4%|▍         | 39/1000 [07:00<1:56:36,  7.28s/it, Pre_train=0, Post_train=0.5, Pre_val=0, Post_val=0.49] [A
-Experiment Loop:   4%|▍         | 40/1000 [07:00<4:13:13, 15.83s/it, Pre_train=0, Post_train=0.5, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 40/1000 [07:00<4:13:13, 15.83s/it, Pre_train=0, Post_train=0.4, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 40/1000 [07:01<4:13:13, 15.83s/it, Pre_train=0, Post_train=0.45, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 40/1000 [07:02<4:13:13, 15.83s/it, Pre_train=0, Post_train=0.52, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 40/1000 [07:02<4:13:13, 15.83s/it, Pre_train=0, Post_train=0.46, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 40/1000 [07:03<4:13:13, 15.83s/it, Pre_train=0, Post_train=0.54, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 40/1000 [07:04<4:13:13, 15.83s/it, Pre_train=0, Post_train=0.53, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 40/1000 [07:05<4:13:13, 15.83s/it, Pre_train=0, Post_train=0.56, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 40/1000 [07:05<4:13:13, 15.83s/it, Pre_train=0, Post_train=0.5, Pre_val=0, Post_val=0.49] [A
-Experiment Loop:   4%|▍         | 40/1000 [07:06<4:13:13, 15.83s/it, Pre_train=0, Post_train=0.55, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 40/1000 [07:07<4:13:13, 15.83s/it, Pre_train=0, Post_train=0.52, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 41/1000 [07:07<3:30:05, 13.14s/it, Pre_train=0, Post_train=0.52, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 41/1000 [07:07<3:30:05, 13.14s/it, Pre_train=0, Post_train=0.48, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 41/1000 [07:08<3:30:05, 13.14s/it, Pre_train=0, Post_train=0.52, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 41/1000 [07:09<3:30:05, 13.14s/it, Pre_train=0, Post_train=0.46, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 41/1000 [07:09<3:30:05, 13.14s/it, Pre_train=0, Post_train=0.55, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 41/1000 [07:10<3:30:05, 13.14s/it, Pre_train=0, Post_train=0.55, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 41/1000 [07:11<3:30:05, 13.14s/it, Pre_train=0, Post_train=0.57, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 41/1000 [07:11<3:30:05, 13.14s/it, Pre_train=0, Post_train=0.53, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 41/1000 [07:12<3:30:05, 13.14s/it, Pre_train=0, Post_train=0.51, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 41/1000 [07:13<3:30:05, 13.14s/it, Pre_train=0, Post_train=0.52, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 41/1000 [07:14<3:30:05, 13.14s/it, Pre_train=0, Post_train=0.44, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 42/1000 [07:14<2:59:57, 11.27s/it, Pre_train=0, Post_train=0.44, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 42/1000 [07:14<2:59:57, 11.27s/it, Pre_train=0, Post_train=0.47, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 42/1000 [07:15<2:59:57, 11.27s/it, Pre_train=0, Post_train=0.36, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 42/1000 [07:16<2:59:57, 11.27s/it, Pre_train=0, Post_train=0.47, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 42/1000 [07:16<2:59:57, 11.27s/it, Pre_train=0, Post_train=0.47, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 42/1000 [07:17<2:59:57, 11.27s/it, Pre_train=0, Post_train=0.52, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 42/1000 [07:18<2:59:57, 11.27s/it, Pre_train=0, Post_train=0.47, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 42/1000 [07:18<2:59:57, 11.27s/it, Pre_train=0, Post_train=0.44, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 42/1000 [07:19<2:59:57, 11.27s/it, Pre_train=0, Post_train=0.57, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 42/1000 [07:20<2:59:57, 11.27s/it, Pre_train=0, Post_train=0.49, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 42/1000 [07:20<2:59:57, 11.27s/it, Pre_train=0, Post_train=0.46, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 43/1000 [07:20<2:38:46,  9.95s/it, Pre_train=0, Post_train=0.46, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 43/1000 [07:21<2:38:46,  9.95s/it, Pre_train=0, Post_train=0.54, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 43/1000 [07:22<2:38:46,  9.95s/it, Pre_train=0, Post_train=0.49, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 43/1000 [07:22<2:38:46,  9.95s/it, Pre_train=0, Post_train=0.47, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 43/1000 [07:23<2:38:46,  9.95s/it, Pre_train=0, Post_train=0.56, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 43/1000 [07:24<2:38:46,  9.95s/it, Pre_train=0, Post_train=0.39, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 43/1000 [07:25<2:38:46,  9.95s/it, Pre_train=0, Post_train=0.51, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 43/1000 [07:25<2:38:46,  9.95s/it, Pre_train=0, Post_train=0.51, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 43/1000 [07:26<2:38:46,  9.95s/it, Pre_train=0, Post_train=0.56, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 43/1000 [07:27<2:38:46,  9.95s/it, Pre_train=0, Post_train=0.43, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 43/1000 [07:27<2:38:46,  9.95s/it, Pre_train=0, Post_train=0.59, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 44/1000 [07:27<2:24:10,  9.05s/it, Pre_train=0, Post_train=0.59, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 44/1000 [07:28<2:24:10,  9.05s/it, Pre_train=0, Post_train=0.48, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 44/1000 [07:29<2:24:10,  9.05s/it, Pre_train=0, Post_train=0.44, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 44/1000 [07:29<2:24:10,  9.05s/it, Pre_train=0, Post_train=0.53, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 44/1000 [07:30<2:24:10,  9.05s/it, Pre_train=0, Post_train=0.49, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 44/1000 [07:31<2:24:10,  9.05s/it, Pre_train=0, Post_train=0.55, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 44/1000 [07:31<2:24:10,  9.05s/it, Pre_train=0, Post_train=0.51, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 44/1000 [07:32<2:24:10,  9.05s/it, Pre_train=0, Post_train=0.53, Pre_val=0, Post_val=0.49][A
-Experiment Loop:   4%|▍         | 44/1000 [07:33<2:24:10,  9.05s/it, Pre_train=0, Post_train=0.44, Pre_val=0, Post_val=0.49][A

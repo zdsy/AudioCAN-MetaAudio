@@ -126,19 +126,9 @@ class CAM(nn.Module):
         n2 = f2.size(1) # (1, 5, 128, 8, 160)
         # print(f1.shape, f2.shape)
 
-        # f1 = f1.view(b, n1, c, -1)
-        # f2 = f2.view(b, n2, c, -1)  #(b, N2, c, h*w )
-
         # Stack frequency into channel dimension
         f1 = f1.view(b, n1, c * h, w)
         f2 = f2.view(b, n2, c * h, w)
-
-        # f1 = f1.mean(-1) # over freq
-        # f2 = f2.mean(-1)
-        # f1 = f1.mean(-2) # over time shape: (b, N1, c, T) (1,5,128,160)
-        # f2 = f2.mean(-2)
-
-        # print(f1.shape, f2.shape)
 
         f1_norm = F.normalize(f1, p=2, dim=2, eps=1e-12)
         f2_norm = F.normalize(f2, p=2, dim=2, eps=1e-12)
@@ -158,10 +148,6 @@ class CAM(nn.Module):
 
         f1 = f1.unsqueeze(2) * a1.unsqueeze(3)  # [B, N1, N2, C, T]
         f2 = f2.unsqueeze(1) * a2.unsqueeze(3)  # [B, N1, N2, C, T]
-        # print(f1.shape, f2.shape)
-
-        # f1 = f1.unsqueeze(-2)  # [B, N1, N2, C, T, 1]
-        # f2 = f2.unsqueeze(-2)  # [B, N1, N2, C, T, 1]
         # print(f1.shape, f2.shape)
 
         f1 = f1.view(b, n1, n2, c, h, w)
