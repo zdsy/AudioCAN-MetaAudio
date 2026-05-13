@@ -1,32 +1,0 @@
-no change     /home/ids/xzhuang/anaconda3/condabin/conda
-no change     /home/ids/xzhuang/anaconda3/bin/conda
-no change     /home/ids/xzhuang/anaconda3/bin/conda-env
-no change     /home/ids/xzhuang/anaconda3/bin/activate
-no change     /home/ids/xzhuang/anaconda3/bin/deactivate
-no change     /home/ids/xzhuang/anaconda3/etc/profile.d/conda.sh
-no change     /home/ids/xzhuang/anaconda3/etc/fish/conf.d/conda.fish
-no change     /home/ids/xzhuang/anaconda3/shell/condabin/Conda.psm1
-no change     /home/ids/xzhuang/anaconda3/shell/condabin/conda-hook.ps1
-no change     /home/ids/xzhuang/anaconda3/lib/python3.11/site-packages/xontrib/conda.xsh
-no change     /home/ids/xzhuang/anaconda3/etc/profile.d/conda.csh
-no change     /home/ids/xzhuang/.bashrc
-No action taken.
-{'CNN': {'in_channels': 1, 'trial_shape': [10, 1, 128, 157], 'hidden_channels': 64, 'pool_dim': [3, 3]}, 'Hybrid': {'in_channels': 1, 'seq_layers': 1, 'seq_type': 'RNN', 'bidirectional': False, 'hidden_channels': 64, 'pool_dim': [3, 3]}}
-
-
-
-
-
-
-cuda:0
-Starting Model: resnet
-resnet:   0%|          | 0/1 [00:00<?, ?it/s]Stats file found: global_ESC_spec_fixed__0.7_0.1_0.2.npy
-[[[-15.60787 ]]
-
- [[ 44.757607]]]
-Logging to file: logs/PROTO_CAN_ESC50_5-5_k=04resnet_global_1_runs_5000_seed_585_27_01__05_44.log
-
-Experiment Loop:   0%|          | 0/500 [00:00<?, ?it/s][A
-Experiment Loop:   0%|          | 0/500 [00:00<?, ?it/s, Pre_train=0, Post_train=0, Pre_val=0, Post_val=0][AFinal Results: {'Pre_acc': 0.0, 'Post_acc': 0.8535520081232488, 'Back_loss': 0.0}
-Experiment Loop:   0%|          | 0/500 [32:41<?, ?it/s, Pre_train=0, Post_train=0, Pre_val=0, Post_val=0]
-resnet: 100%|██████████| 1/1 [32:46<00:00, 1966.12s/it]resnet: 100%|██████████| 1/1 [32:46<00:00, 1966.12s/it]
