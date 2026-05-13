@@ -20,3 +20,19 @@ logs/
 *.png
 *.txt
 *.ipynb
+
+
+# Data and Checkpoints
+*.pt
+*.pth
+*.ckpt
+data/
+logs/
+checkpoints/
+
+# Cluster and OS artifacts
+*.slurm
+*.out
+*.err
+.DS_Store
+__pycache__/
