@@ -5,7 +5,7 @@ This repository contains the official PyTorch implementation of **AudioCAN**, ev
 
 ## Repository Structure
 
-The repository is organized with the primary execution and logic scripts in the root directory:
+The repository is organized with the primary execution and logic scripts in the Example directory:
 
 * **`BaseLooperProto.py`**: The main entry point. Orchestrates sequential experiments over multiple models and seeds.
 * **`proto_params.yaml`**: The primary configuration file governing hyperparameters, hardware allocation, and dataset paths.
