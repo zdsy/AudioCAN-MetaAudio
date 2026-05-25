@@ -5,7 +5,7 @@ base:
   k_shot: 1
   q_queries: 1                                                          
   distance: 'l2'                                                                
-  task_type: '(re)CAN_VoxCeleb_5-1_2Dssl'  # 'ProtoNet'/'MatchingNet'/'RelationNet'/'CAN_VoxCeleb'/'Hybrid'
+  task_type: 'CAN_VoxCeleb_5-1'  # 'ProtoNet'/'MatchingNet'/'RelationNet'/'CAN_VoxCeleb'/'Hybrid'
   cuda: 0
   num_repeats: 1
   out_dim: 64
