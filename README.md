@@ -47,3 +47,22 @@ data:
   # Update these paths to your local data directories
   fixed_path: 'dataset_/splits/VoxCeleb_norm_split.npy'
   data_path: '../../Datasets/VoxCeleb1_Mirror/features'
+```
+
+### Hyperparameter Configuration
+Key meta-learning parameters can also be adjusted in `proto_params.yaml`:
+* `n_way`: Number of support classes per episode.
+* `k_shot`: Number of support examples per support class.
+* `q_queries`: Number of query examples per class.
+* `mask_k`: Masking ratio of energy-guided masking.
+
+## Execution
+
+To begin the training and evaluation loop, execute the looper script. The script automatically parses `proto_params.yaml`, generates unique task IDs, and handles iterative evaluations based on the `num_repeats` variable.
+
+```bash
+python BaseLooperProto.py
+```
+
+## License
+This project is licensed under the [MIT License](LICENSE).
