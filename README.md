@@ -1,7 +1,7 @@
 # AudioCAN: Enhanced Few-Shot Audio Classification via Energy-Guided Temporal Cross Attention
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-This repository contains the official PyTorch implementation of **AudioCAN**, evaluated using the MetaAudio benchmark framework.
+This repository contains the official PyTorch implementation of **AudioCAN** [[paper](https://ieeexplore.ieee.org/abstract/document/11524076)], evaluated using the MetaAudio benchmark framework.
 
 ## Repository Structure
 
